@@ -45,9 +45,9 @@ The revised compact form factor is a **proposed design target**, subject to CAD,
 | Width (W) | **25–28 cm** |
 | Length / depth (D) | **30–33 cm** |
 | Height (H) | **30–35 cm** |
-| Complete robot mass | **5 kg preferred target; 4–6 kg design range**, including battery and all installed hardware |
-| Maximum complete robot mass | **6 kg design ceiling**, including battery and all installed hardware |
-| Initial payload target | **1 kg**; a **2 kg stretch target** requires separate validation |
+| Complete robot mass | **8 kg target**, including battery and all installed hardware |
+| Maximum complete robot mass | **10 kg design ceiling**, including battery and all installed hardware |
+| Payload | **TBD**; define after structural, traction, braking and stability calculations |
 | Mobility | Four wheels; indoor use |
 
 The external dimensions include the wheels, fixed sensor housing and all permanent external features. Robot mass includes the chassis, enclosure, wheels, motors, battery/BMS, computer, sensors, wiring, connectors, fasteners and guards; payload is accounted for separately.
@@ -58,7 +58,7 @@ The external dimensions include the wheels, fixed sensor housing and all permane
 
 **Engineering checks before design freeze:** verify the complete external envelope in CAD; weigh every selected component and the assembled robot; calculate centre of gravity and tip resistance; validate the 1 kg initial payload and separately assess the 2 kg stretch target, wheel loading, floor transitions, stopping distance, battery containment/charging, thermal behaviour, ventilation, acoustic performance and maintenance access.
 
-**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** The 5 kg preferred target, 4–6 kg design range and dimensions are not demonstrated by a physical prototype. The 6 kg value is the maximum complete-robot design ceiling, not a measured result. No stair climbing, outdoor terrain capability, waterproofing, fire resistance, IP rating or certified safety performance is claimed.
+**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** The 8 kg target and 10 kg maximum are design targets, not measured results from a physical prototype. Payload capacity remains TBD and must be established through engineering analysis and testing. No stair climbing, outdoor terrain capability, waterproofing, fire resistance, IP rating or certified safety performance is claimed.
 
 
 ## What it is designed to monitor
@@ -92,7 +92,7 @@ The following documents define the proposed engineering baseline. They are requi
 - [Safety and cybersecurity requirements](docs/SAFETY_AND_CYBERSECURITY_REQUIREMENTS.md) — safety gates, privacy and security controls.
 - [Verification and validation plan](docs/VERIFICATION_AND_VALIDATION_PLAN.md) — software, simulation, bench and supervised test stages.
 - [Hardware specification](docs/HARDWARE_SPECIFICATION.md) — component selection criteria and TBD engineering values; research only, no purchasing.
-- [Preliminary internal layout and 5 kg preferred target mass plan](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.\n- [Indoor Perception MVP](docs/INDOOR_PERCEPTION_MVP.md) — initial deterministic CPU-first decision layer, conservative safe-hold logic and repeatable unit tests; no vision model or hardware integration is claimed.
+- [Preliminary internal layout and historical mass plan (superseded by the current 8 kg target / 10 kg maximum)](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.\n- [Indoor Perception MVP](docs/INDOOR_PERCEPTION_MVP.md) — initial deterministic CPU-first decision layer, conservative safe-hold logic and repeatable unit tests; no vision model or hardware integration is claimed.
 
 ### Software-only MVP demonstrator
 
@@ -280,7 +280,7 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 **Product-specific design priorities**
 - **Indoor mobility:** study footprint, turning radius, wheelbase, threshold crossing, floor transitions, carpet interaction, slope limits and low-speed stability.
 - **Human-safe structure:** rounded external geometry, pinch/entrapment avoidance, compliant contact surfaces, guarded moving parts and accessible emergency stop.
-- **Payload and manipulation:** target a 5 kg preferred complete robot mass, keep the design within 4–6 kg, and never exceed the 6 kg complete-robot ceiling; assess centre of mass, tip-over margin, braking distance, payload retention and safe handling separately.
+- **Payload and manipulation:** target an 8 kg complete robot mass and keep the design within the 10 kg maximum, including battery and installed hardware; assess payload, centre of mass, tip-over margin, braking distance, retention and safe handling separately.
 - **Home-environment awareness:** detect people, pets, furniture, stairs, cables, spills and temporary obstacles with uncertainty-aware stop/slow/ask behaviour.
 - **Power and thermal design:** assess battery protection, charging safety, runtime estimation, thermal monitoring, serviceability and graceful low-power shutdown.
 - **Privacy by design:** local-first processing where feasible, clear camera/microphone states, data minimisation and user-controlled retention.
@@ -320,3 +320,41 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 **Current status:** global readiness is a portfolio-wide design target. Each product must report its actual gate and evidence separately. No product is to be described as globally available or purchasable until the relevant commercial and regional release gates are met.
 
 **Shared standard:** [PUI89 Global Product Readiness Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/product/PUI89_GLOBAL_PRODUCT_READINESS_STANDARD_V1.0.md).
+
+---
+
+## Preliminary Prototype Cost Estimate (15 November 2026)
+
+**Indicative one-unit engineering prototype planning range: ฿120,000–฿350,000 (THB).**
+
+**Included at a planning level:** A four-wheel indoor mobile base, RGB/depth sensing, LiDAR or equivalent navigation sensors, edge computer, battery and integration.
+
+**Estimate status:** preliminary internal planning estimate only; not a supplier quotation, purchase commitment, verified bill of materials, fixed project budget or claim that a prototype exists. The range depends on final requirements, component selection, non-Chinese-origin supplier availability, compatibility, import/shipping costs and test scope. Obtain current written quotations and verify country of manufacture/origin, exact model/part number, specifications, warranty and lead time before any procurement.
+
+**Generally excluded:** engineering labour, research salaries, facilities, taxes/VAT, import duties, shipping unless stated in a supplier quotation, certification/regulatory approvals, production tooling, mass production, long-term maintenance and contingency. Project-specific exclusions: any major custom manufacturing or certification not specified in the prototype scope.
+
+**Lower-cost development path:** continue software-first development, open-source tools and simulation before purchasing physical hardware. Shared AI Core software and reusable development equipment may reduce duplicated costs; savings are not yet quantified. No purchase or installation is authorised by this estimate.
+
+
+### Prototype hardware, materials and component budget breakdown
+
+**Planning scope:** one engineering prototype; total planning range remains **฿120,000–฿350,000 THB**. The following subsystem allowances are preliminary engineering estimates, not supplier quotes. Individual ranges are not a promise of purchase price and must be reconciled against exact selected parts and written quotations before procurement.
+
+| Subsystem / component type | Qty per prototype | Material / specification and function | Indicative allowance (THB) |
+|---|---:|---|---:|
+| Four-wheel chassis + enclosure | 1 set | Lightweight metal/aluminium frame, polymer covers, guarded wheel wells and service access | ฿20,000–฿55,000 |
+| Drive motors + encoders | 2 drive + 2 caster wheels | Differential drive motors with encoders, caster set, brakes/holding strategy as required | ฿15,000–฿40,000 |
+| RGB-D + 2D LiDAR + IMU | 1 set | Indoor depth camera, 2D navigation LiDAR, IMU and bumper sensors | ฿20,000–฿60,000 |
+| Edge computer + MCU | 1 set | CPU-first edge computer, memory/storage and MCU for deterministic I/O | ฿20,000–฿60,000 |
+| Battery + BMS + charging | 1 set | Protected battery, BMS, charger interface, fuse and power distribution | ฿10,000–฿30,000 |
+| Safety / docking / user interface | 1 set | Emergency stop, bumpers, status display/audio, docking contacts and protected enclosure | ฿10,000–฿35,000 |
+| Harness, connectors + fabrication | 1 lot | Wiring, connectors, brackets, fasteners, assembly and cable protection | ฿5,000–฿20,000 |
+| Integration + controlled validation | 1 lot | Navigation tuning, payload/weight checks, docking, braking and supervised indoor tests | ฿20,000–฿50,000 |
+
+**Material families:** aluminium alloy or stainless-steel structural members where suitable; engineering polymer covers; corrosion-resistant fasteners; rated cables/connectors; protective enclosures; and product-specific seals, guards or vibration isolation. Exact alloy/grade, IP rating, load rating and country of manufacture remain unselected until engineering calculations and supplier evidence are available.
+
+**Shared hardware accounting:** Shared AI Core software is not a product BOM. Reusable development computers, cameras or bench instruments must be listed as shared assets and allocated once; do not duplicate their full purchase cost across all seven products. Product-specific mounts, wiring, protection and integration remain in each product allowance.
+
+**Sourcing controls:** prefer non-Chinese-origin candidates only when the exact manufacturing origin is evidenced. Record legal manufacturer, brand, exact model/part number, manufacturing country, evidence URL/document, authorised supplier, dated price/currency, stock, MOQ, lead time, warranty and landed-cost assumptions. Brand headquarters or seller location is not proof of manufacturing origin. Unknown origin = **UNVERIFIED**.
+
+**Prototype boundary:** the allowance is for a controlled engineering prototype, not a certified commercial product or production-ready system. It excludes labour, research salaries, facilities, VAT/tax, import duties, freight/insurance unless explicitly quoted, certification, production tooling, mass production, maintenance and contingency. No purchase, download, installation or supplier commitment is authorised by this documentation.
