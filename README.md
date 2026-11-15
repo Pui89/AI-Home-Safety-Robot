@@ -334,3 +334,27 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 **Generally excluded:** engineering labour, research salaries, facilities, taxes/VAT, import duties, shipping unless stated in a supplier quotation, certification/regulatory approvals, production tooling, mass production, long-term maintenance and contingency. Project-specific exclusions: any major custom manufacturing or certification not specified in the prototype scope.
 
 **Lower-cost development path:** continue software-first development, open-source tools and simulation before purchasing physical hardware. Shared AI Core software and reusable development equipment may reduce duplicated costs; savings are not yet quantified. No purchase or installation is authorised by this estimate.
+
+
+### Prototype hardware, materials and component budget breakdown
+
+**Planning scope:** one engineering prototype; total planning range remains **฿120,000–฿350,000 THB**. The following subsystem allowances are preliminary engineering estimates, not supplier quotes. Individual ranges are not a promise of purchase price and must be reconciled against exact selected parts and written quotations before procurement.
+
+| Subsystem / component type | Qty per prototype | Material / specification and function | Indicative allowance (THB) |
+|---|---:|---|---:|
+| Four-wheel chassis + enclosure | 1 set | Lightweight metal/aluminium frame, polymer covers, guarded wheel wells and service access | ฿20,000–฿55,000 |
+| Drive motors + encoders | 2 drive + 2 caster wheels | Differential drive motors with encoders, caster set, brakes/holding strategy as required | ฿15,000–฿40,000 |
+| RGB-D + 2D LiDAR + IMU | 1 set | Indoor depth camera, 2D navigation LiDAR, IMU and bumper sensors | ฿20,000–฿60,000 |
+| Edge computer + MCU | 1 set | CPU-first edge computer, memory/storage and MCU for deterministic I/O | ฿20,000–฿60,000 |
+| Battery + BMS + charging | 1 set | Protected battery, BMS, charger interface, fuse and power distribution | ฿10,000–฿30,000 |
+| Safety / docking / user interface | 1 set | Emergency stop, bumpers, status display/audio, docking contacts and protected enclosure | ฿10,000–฿35,000 |
+| Harness, connectors + fabrication | 1 lot | Wiring, connectors, brackets, fasteners, assembly and cable protection | ฿5,000–฿20,000 |
+| Integration + controlled validation | 1 lot | Navigation tuning, payload/weight checks, docking, braking and supervised indoor tests | ฿20,000–฿50,000 |
+
+**Material families:** aluminium alloy or stainless-steel structural members where suitable; engineering polymer covers; corrosion-resistant fasteners; rated cables/connectors; protective enclosures; and product-specific seals, guards or vibration isolation. Exact alloy/grade, IP rating, load rating and country of manufacture remain unselected until engineering calculations and supplier evidence are available.
+
+**Shared hardware accounting:** Shared AI Core software is not a product BOM. Reusable development computers, cameras or bench instruments must be listed as shared assets and allocated once; do not duplicate their full purchase cost across all seven products. Product-specific mounts, wiring, protection and integration remain in each product allowance.
+
+**Sourcing controls:** prefer non-Chinese-origin candidates only when the exact manufacturing origin is evidenced. Record legal manufacturer, brand, exact model/part number, manufacturing country, evidence URL/document, authorised supplier, dated price/currency, stock, MOQ, lead time, warranty and landed-cost assumptions. Brand headquarters or seller location is not proof of manufacturing origin. Unknown origin = **UNVERIFIED**.
+
+**Prototype boundary:** the allowance is for a controlled engineering prototype, not a certified commercial product or production-ready system. It excludes labour, research salaries, facilities, VAT/tax, import duties, freight/insurance unless explicitly quoted, certification, production tooling, mass production, maintenance and contingency. No purchase, download, installation or supplier commitment is authorised by this documentation.
