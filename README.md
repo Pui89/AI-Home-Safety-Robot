@@ -45,9 +45,9 @@ The revised compact form factor is a **proposed design target**, subject to CAD,
 | Width (W) | **25–28 cm** |
 | Length / depth (D) | **30–33 cm** |
 | Height (H) | **30–35 cm** |
-| Complete robot mass | **5 kg preferred target; 4–6 kg design range**, including battery and all installed hardware |
-| Maximum complete robot mass | **6 kg design ceiling**, including battery and all installed hardware |
-| Initial payload target | **1 kg**; a **2 kg stretch target** requires separate validation |
+| Complete robot mass | **8 kg target**, including battery and all installed hardware |
+| Maximum complete robot mass | **10 kg design ceiling**, including battery and all installed hardware |
+| Payload | **TBD**; define after structural, traction, braking and stability calculations |
 | Mobility | Four wheels; indoor use |
 
 The external dimensions include the wheels, fixed sensor housing and all permanent external features. Robot mass includes the chassis, enclosure, wheels, motors, battery/BMS, computer, sensors, wiring, connectors, fasteners and guards; payload is accounted for separately.
@@ -58,7 +58,7 @@ The external dimensions include the wheels, fixed sensor housing and all permane
 
 **Engineering checks before design freeze:** verify the complete external envelope in CAD; weigh every selected component and the assembled robot; calculate centre of gravity and tip resistance; validate the 1 kg initial payload and separately assess the 2 kg stretch target, wheel loading, floor transitions, stopping distance, battery containment/charging, thermal behaviour, ventilation, acoustic performance and maintenance access.
 
-**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** The 5 kg preferred target, 4–6 kg design range and dimensions are not demonstrated by a physical prototype. The 6 kg value is the maximum complete-robot design ceiling, not a measured result. No stair climbing, outdoor terrain capability, waterproofing, fire resistance, IP rating or certified safety performance is claimed.
+**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** The 8 kg target and 10 kg maximum are design targets, not measured results from a physical prototype. Payload capacity remains TBD and must be established through engineering analysis and testing. No stair climbing, outdoor terrain capability, waterproofing, fire resistance, IP rating or certified safety performance is claimed.
 
 
 ## What it is designed to monitor
@@ -280,7 +280,7 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 **Product-specific design priorities**
 - **Indoor mobility:** study footprint, turning radius, wheelbase, threshold crossing, floor transitions, carpet interaction, slope limits and low-speed stability.
 - **Human-safe structure:** rounded external geometry, pinch/entrapment avoidance, compliant contact surfaces, guarded moving parts and accessible emergency stop.
-- **Payload and manipulation:** target a 5 kg preferred complete robot mass, keep the design within 4–6 kg, and never exceed the 6 kg complete-robot ceiling; assess centre of mass, tip-over margin, braking distance, payload retention and safe handling separately.
+- **Payload and manipulation:** target an 8 kg complete robot mass and keep the design within the 10 kg maximum, including battery and installed hardware; assess payload, centre of mass, tip-over margin, braking distance, retention and safe handling separately.
 - **Home-environment awareness:** detect people, pets, furniture, stairs, cables, spills and temporary obstacles with uncertainty-aware stop/slow/ask behaviour.
 - **Power and thermal design:** assess battery protection, charging safety, runtime estimation, thermal monitoring, serviceability and graceful low-power shutdown.
 - **Privacy by design:** local-first processing where feasible, clear camera/microphone states, data minimisation and user-controlled retention.
