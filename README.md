@@ -404,6 +404,20 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 
 **Prototype boundary:** the allowance is for a controlled engineering prototype, not a certified commercial product or production-ready system. It excludes labour, research salaries, facilities, VAT/tax, import duties, freight/insurance unless explicitly quoted, certification, production tooling, mass production, maintenance and contingency. No purchase, download, installation or supplier commitment is authorised by this documentation.
 
+## Shared Interaction Intelligence — AI HOME
+
+AI HOME uses the portfolio-wide interaction architecture defined in [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core). Its proposed indoor interaction profile includes:
+
+- Thai/English speech input and spoken responses, subject to language-specific evaluation.
+- Voice activity detection and an optional, locally processed wake phrase.
+- Resident dialogue for everyday assistance, home-condition explanations and emergency-status communication.
+- Environmental sound-event awareness for selected alarms and unusual sounds; sound classification is advisory and cannot replace certified alarms.
+- Optional visual question answering for describing visible household conditions, always grounded in current sensor evidence and uncertainty.
+
+**Privacy and safety:** no default continuous audio recording; use clear microphone controls, local processing where feasible, retention limits and resident consent. A spoken request becomes an ActionProposal and must pass the independent safety gate. Voice or model output cannot independently unlock doors, disable alarms, operate appliances or make emergency decisions.
+
+**Maturity:** proposed product configuration only. No interaction model is approved, downloaded, installed, integrated or validated for AI HOME. See the Shared AI Core interaction specification and model registry for candidate status.
+
 ## World-Class Engineering Standard v1.0
 
 This product follows the proposed [PUI89 World-Class Engineering Standard v1.0](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_WORLD_CLASS_ENGINEERING_STANDARD_V1.0.md), alongside the [PUI89 Simple, Safe & Professional Engineering Standard](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_SIMPLE_SAFE_PROFESSIONAL_STANDARD.md). The shared standard defines requirements traceability, Shared AI Core contracts, PTI evaluation, simulation, safety, hardware provenance, cost engineering, verification and release gates. Product capabilities remain subject to their stated evidence and validation boundaries; this reference does not imply that a gate has been passed.
