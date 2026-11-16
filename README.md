@@ -416,6 +416,19 @@ AI HOME uses the portfolio-wide interaction architecture defined in [PUI89 Share
 
 **Privacy and safety:** no default continuous audio recording; use clear microphone controls, local processing where feasible, retention limits and resident consent. A spoken request becomes an ActionProposal and must pass the independent safety gate. Voice or model output cannot independently unlock doors, disable alarms, operate appliances or make emergency decisions.
 
+**Recommended model candidates for AI HOME (not approved or integrated):**
+
+| Model/tool | Role in AI HOME | Status |
+|---|---|---|
+| [openai/whisper-small](https://huggingface.co/openai/whisper-small) | Thai/English speech-to-text candidate; evaluate noisy-room accuracy and CPU/RAM | PENDING_REVIEW |
+| [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct) | Optional dialogue and instruction clarification; 3.8B parameters, likely a higher-resource option | PENDING_REVIEW |
+| [hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) | English spoken responses; this candidate does not establish Thai TTS support | PENDING_REVIEW |
+| [qualcomm/YamNet](https://huggingface.co/qualcomm/YamNet) | Selected environmental sound-event classification, advisory only | PENDING_REVIEW |
+| [Silero VAD](https://github.com/snakers4/silero-vad) | Voice activity / speech-segment detection | PENDING_REVIEW |
+| [HuggingFaceTB/SmolVLM2-500M-Video-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct) | Optional bounded descriptions of current camera observations; never a home-security decision-maker | PENDING_REVIEW |
+
+Do not add openWakeWord's included pretrained weights at this stage: their CC BY-NC-SA 4.0 terms require separate review. Thai speech generation remains an open candidate-research task.
+
 **Maturity:** proposed product configuration only. No interaction model is approved, downloaded, installed, integrated or validated for AI HOME. See the Shared AI Core interaction specification and model registry for candidate status.
 
 ## World-Class Engineering Standard v1.0
