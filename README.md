@@ -67,6 +67,51 @@ Research areas include water leaks and moisture; temperature, humidity and heat;
 
 These are monitoring and evidence-research areas—not validated detection, diagnosis or prevention capabilities.
 
+## Proposed operating modes
+
+AI HOME is intended to support three distinct, supervised product modes. These are proposed product requirements and research directions—not implemented, integrated or validated safety functions.
+
+### Mode 1 — Intelligent Living & Environmental Safety
+
+Support owner-supervised awareness of household and building conditions:
+
+- Monitor supported sensor readings and anomalies for temperature, humidity, air quality, water-leak indicators, smoke/gas sensor alerts and equipment conditions where suitable sensors are installed.
+- Support building-vibration observation and comparison with a documented baseline; distinguish robot-generated vibration and sensor faults from environmental measurements.
+- Assist visual review of visible cracks, moisture marks and surface changes. These are screening observations only, not structural diagnoses or safety certifications.
+- Maintain timestamped observations, sensor-health status, uncertainty and reviewable event history.
+
+### Mode 2 — Home Security
+
+Provide privacy-aware, owner-configured security awareness inside the home:
+
+- Detect people and relevant objects in permitted camera views.
+- Notify the owner about unexpected visitors or entry events when supported by configured door/window sensors and authorized monitoring zones.
+- Monitor owner-designated restricted areas and report possible zone-entry events for human verification.
+- Detect selected sound events such as alarms, glass-breaking-like sounds or calls for help, subject to microphone permissions and task-specific validation.
+- Identify visible signs of forced entry, such as a damaged window or door, as indications requiring human inspection—not proof of a crime.
+- Create concise event records with timestamp, room/zone label, event category, confidence/uncertainty and minimum necessary evidence.
+- Support owner-approved notification to designated contacts; emergency calls or external sharing must require explicit configuration and appropriate confirmation.
+
+### Mode 3 — Family & Emergency Care
+
+Support household safety awareness without presenting AI HOME as a medical device or substitute caregiver:
+
+- Research fall-like event detection, prolonged inactivity alerts and calls-for-help detection, with clear uncertainty and human confirmation.
+- Support child and pet presence awareness in owner-designated risk areas, subject to privacy and supervised operation.
+- Provide emergency event summaries and notify configured caregivers or household contacts when authorized.
+- Never diagnose a medical condition or infer a person's identity, health status or intent from appearance alone.
+
+### Shared operating and privacy requirements
+
+- No facial recognition or identity profiling by default. Use temporary, session-limited tracking only when necessary and authorized.
+- Do not label a person as an intruder or criminal based solely on appearance, presence or an AI score. Distinguish an observed event from an interpretation.
+- Minimise indoor audio/video collection; provide clear owner controls for camera/microphone activation, access permissions, retention and deletion.
+- Do not expose private camera footage, floor plans, detailed security configurations, access credentials or resident routines in public documentation.
+- Do not autonomously lock or unlock doors, operate barriers, disable alarms, control breakers/valves/appliances, pursue or physically restrain people.
+- Certified smoke, fire, carbon-monoxide, gas and electrical protection devices remain primary. AI must not delay evacuation or emergency procedures.
+- Consequential alerts and responses require human review. Safe-stop, obstacle avoidance and manual recovery remain independent of security-mode decisions.
+- Every capability remains proposed until sensor suitability, model provenance/licensing, privacy controls, false-alarm behaviour and real-world performance are tested and documented.
+
 ## Shared AI Core
 
 The project is designed to use versioned `WorldState`, `Observation`, `ActionProposal` and `FailureReport` contracts, with evidence provenance, timestamps, sensor-health checks, uncertainty handling, safety gates and human-reviewed recommendations.
