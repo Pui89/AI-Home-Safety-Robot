@@ -1,5 +1,24 @@
 # PUI89 AI HOME — Indoor Home Assistant Robot
 
+![PUI89 AI HOME — compact low-profile indoor four-wheel assistant concept](docs/images/ai-home-compact-four-wheel.svg)
+
+## Product at a glance
+
+**Product direction:** A compact four-wheel indoor assistant for home awareness and everyday support.
+
+**User value:** Help residents notice changes in home conditions and receive understandable, evidence-based prompts for human attention.
+
+**Key capabilities and design priorities:** Indoor scene and condition awareness; home-safety observations; family and emergency support concepts; human-reviewed alerts and privacy-aware operation.
+
+**Evidence maturity:** **Implemented** — early requirements, architecture and software foundations are documented. No physical robot, real sensor integration or validated home-safety performance is established.
+
+**Evidence reviewed:** 17 November 2026. See the [shared PUI89 development record](https://pui89.github.io/) for current evidence, limitations and the next milestone.
+
+**Evidence boundary:** AI recommendations do not replace certified smoke, fire, carbon-monoxide or electrical protection.
+
+**Project links:** [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [PUI89 portfolio](https://pui89.github.io/)
+
+---
 
 ## Public privacy boundary
 
