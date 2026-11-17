@@ -443,3 +443,15 @@ This product follows the proposed [PUI89 World-Class Engineering Standard v1.0](
 *Proposed indoor-assistant workflow. AI does not replace certified smoke, fire, carbon-monoxide or electrical safety devices.*
 
 This diagram follows the [PUI89 Technical Visual Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/PUI89_TECHNICAL_VISUAL_STANDARD_V1.0.md). It explains the proposed product-specific AI workflow and does not imply unverified implementation or physical capability.
+
+## Portfolio consistency and founder-approved requirements
+
+**PUI89 AI HOME**
+
+Founder-approved complete robot mass requirement: **8 kg target; 10 kg maximum**, including battery, enclosure, compute, sensors, wiring and every installed component. These are design limits, not measured prototype mass. Any future BOM or prototype report must account for the complete assembled system.
+
+**ข้อกำหนดภาษาไทย**
+
+ข้อกำหนดน้ำหนักรวมที่ผู้ก่อตั้งยืนยัน: **เป้าหมาย 8 กิโลกรัม และสูงสุด 10 กิโลกรัม** รวมแบตเตอรี่ ตัวถัง คอมพิวเตอร์ เซนเซอร์ สายไฟ และอุปกรณ์ที่ติดตั้งทั้งหมด เป็นข้อกำหนดการออกแบบ ไม่ใช่น้ำหนักต้นแบบที่วัดได้
+
+**Portfolio boundary:** PUI89 has exactly six active products. Shared AI Core is infrastructure, not a product. Extreme Flood Rescue AI is inactive as a standalone product; preserve historical records but do not present it as an active product.
