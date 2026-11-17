@@ -1,6 +1,24 @@
 # PUI89 AI HOME — Indoor Home Assistant Robot
 
+![PUI89 AI HOME — compact low-profile indoor four-wheel assistant concept](docs/images/ai-home-compact-four-wheel.svg)
 
+## Product at a glance
+
+**Product direction:** A compact four-wheel indoor assistant for home awareness and everyday support.
+
+**User value:** Help residents notice changes in home conditions and receive understandable, evidence-based prompts for human attention.
+
+**Key capabilities and design priorities:** Indoor scene and condition awareness; home-safety observations; family and emergency support concepts; human-reviewed alerts and privacy-aware operation.
+
+**Current development stage:** Early software foundation and requirements; an initial Stage 2 indoor-perception decision layer is documented, but no completed robot or real sensor integration is established.
+
+**Portfolio readiness baseline:** **28%** — last recorded baseline dated **7 November 2026**. This is a historical, evidence-based portfolio readiness snapshot, not a live progress feed or a claim of physical product completion. Refresh it only from the dated PUI89 portfolio register.
+
+**Evidence boundary:** Not a certified smoke, fire, carbon-monoxide or electrical protection device; no physical safety function is claimed.
+
+**Project links:** [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [PUI89 portfolio](https://pui89.github.io/)  
+
+---
 ## Public privacy boundary
 
 This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
@@ -32,7 +50,6 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 - **Repository:** [Pui89/AI-Home-Safety-Robot](https://github.com/Pui89/AI-Home-Safety-Robot)
 - **Related product:** [PUI89 AI NOMAD](https://github.com/Pui89/AI-Mobile-Assistant-Robot) is a separate indoor/outdoor and travel platform.
 
-![PUI89 AI HOME — compact low-profile indoor four-wheel assistant concept](docs/images/ai-home-compact-four-wheel.svg)
 
 *Concept illustration built as an embedded SVG. Proposed design only; physical construction and validation remain pending.*
 
