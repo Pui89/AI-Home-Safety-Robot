@@ -1,4 +1,4 @@
-# PUI89 AI Home Assistant Robot
+# PUI89 AI HOME — Indoor Home Assistant Robot
 
 
 ## Public privacy boundary
@@ -14,7 +14,7 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 
 > **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
 > 
-> **Project:** PUI89 AI Home Assistant Robot  
+> **Project:** PUI89 AI HOME  
 > **Focus:** Indoor home-assistant robot concept and home-safety software platform  
 > **Development stage:** Initial Stage 2 indoor-perception decision layer added; no completed robot, live camera input or real sensor integration is established.
 > 
@@ -24,7 +24,7 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 
 ## Project overview
 
-**PUI89 AI Home Assistant Robot** is an indoor, four-wheel assistant concept for home-condition awareness and everyday support. The project is software-first and evidence-led.
+**PUI89 AI HOME** is an indoor, four-wheel assistant concept for home-condition awareness and everyday support. The project is software-first and evidence-led.
 
 - **Stage:** early software foundation and product requirements; no completed robot or real sensor integration is established.
 - **Purpose:** help residents notice changes, understand evidence and decide when human attention is needed.
