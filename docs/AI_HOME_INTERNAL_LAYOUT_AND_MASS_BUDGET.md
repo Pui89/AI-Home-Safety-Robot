@@ -1,18 +1,19 @@
-# PUI89 AI HOME — Compact Layout and 5 kg Preferred Target Mass Plan
+# PUI89 AI HOME — Compact Layout and Complete-Mass Budget
 
 **Status:** Preliminary design study only. No components are selected, purchased, assembled, weighed or validated.  
-**Revised design envelope:** 25–28 cm wide × 30–33 cm deep × 30–35 cm high, including wheels and fixed external features.  
-**Preferred complete robot mass:** 5 kg, including battery and all installed parts.  
-**Complete-robot design range and ceiling:** 4–6 kg; 6 kg is the hard upper design limit, not a target to exceed.  
-**Initial payload target:** 1 kg, additional to robot mass. A 2 kg payload is a stretch target requiring separate validation.  
+**Founder-approved complete robot mass target:** **8 kg**, including battery and all installed parts.  
+**Maximum complete robot mass:** **10 kg**. This is a hard ceiling, not a target to exceed.  
+**Payload:** TBD; it must be defined separately through structural, stability, traction, braking and runtime analysis. Do not assume a payload capacity.  
 **Use:** Indoor residential concept; supervised movement only if a mobility prototype is later developed.
+
+> **Supersession record:** This 8 kg target / 10 kg maximum replaces the former 5 kg preferred / 6 kg ceiling and the earlier assumed 1 kg / 2 kg payload cases. Those earlier figures are withdrawn and must not be used for current BOM or design decisions.
 
 ## 1. Design rules
 
-1. Design toward a preferred complete robot mass of 5 kg; remain within the 4–6 kg design range and never exceed the 6 kg complete-robot ceiling.
-2. The complete robot mass includes chassis, enclosure, wheels, motors, battery/BMS, computer, sensors, wiring, connectors, fasteners, guards and all installed accessories.
-3. Payload is separate from robot mass and must be included in stability, wheel-load, torque, braking and runtime calculations.
-4. The initial loaded-mass engineering case is up to 6 kg (5 kg preferred robot plus 1 kg payload); the 2 kg stretch-payload case is up to 7 kg at the 5 kg preferred robot mass. These are calculation cases, not validated capabilities.
+1. Design toward a preferred complete robot mass of **8 kg**; the complete assembled robot must never exceed **10 kg**.
+2. Complete robot mass includes chassis, enclosure, wheels, motors, battery/BMS, computer, sensors, wiring, connectors, fasteners, guards and all installed accessories.
+3. Payload is separate from complete robot mass and must be included in stability, wheel-load, torque, braking and runtime calculations. Payload capacity remains TBD until separately analysed and tested.
+4. Do not assume a 1 kg initial payload or 2 kg stretch payload. Establish any payload limit from the selected mechanical architecture, then verify it through controlled testing while keeping total robot mass within the 10 kg ceiling.
 5. Do not invent subsystem mass allocations before candidate components and mechanical architecture are selected. Record each candidate's datasheet mass and later measure the physical part.
 6. Keep heavy components low and near the centreline. Avoid top-heavy sensor towers and unnecessary displays, duplicate controllers, oversized motors or decorative structure.
 7. Certified household smoke/fire/CO/electrical protection remains primary. AI HOME must not control locks, breakers, valves, appliances or certified alarms.
@@ -51,7 +52,7 @@ No unsupported per-subsystem allocations are assigned at this stage. Populate th
 | Power conversion, fuses and protection | TBD | TBD | TBD | TBD | TBD | Pending |
 | Wiring, connectors and strain relief | TBD | TBD | TBD | TBD | TBD | Pending |
 | Guards, fasteners and service parts | TBD | TBD | TBD | TBD | TBD | Pending |
-| **Complete robot mass** |  |  | **TBD** | **TBD** | **TBD** | Prefer 5 kg; remain within 4–6 kg and never exceed 6 kg |
+| **Complete robot mass** |  |  | **TBD** | **TBD** | **TBD** | **8 kg target; 10 kg maximum** |
 
 Do not declare the target achieved from estimates alone. Report the measured assembled mass, scale resolution, configuration, battery state and included accessories.
 
@@ -73,11 +74,11 @@ No purchases, supplier contact, account creation, trials, package installations 
 ## 5. Engineering gates before design freeze
 
 - [ ] CAD proves the complete external envelope is within 280 × 330 × 350 mm.
-- [ ] Component-level mass ledger targets 5 kg preferred and proves the complete robot remains at or below 6 kg.
+- [ ] Component-level mass ledger supports an **8 kg target** and proves the complete robot remains at or below **10 kg**.
 - [ ] Physical weighing confirms the assembled mass; estimates are not reported as measurements.
 - [ ] Centre-of-gravity and tip-resistance analysis covers turns, slopes and emergency stops.
 - [ ] Drive torque, speed, wheel loading, stopping distance and floor-transition limits are calculated.
-- [ ] The 1 kg initial payload is validated separately; the 2 kg stretch target is treated as a separate test case.
+- [ ] Payload capacity remains TBD until separately analysed and validated; no assumed payload is added to the 10 kg complete-robot ceiling.
 - [ ] Battery energy, peak/continuous current, BMS, charging and thermal limits are documented.
 - [ ] Electrical protection, fuse sizing, connector ratings and wiring diagram are reviewed.
 - [ ] Sensor placement, coverage, blind spots, calibration and environmental limits are documented.
@@ -87,8 +88,16 @@ No purchases, supplier contact, account creation, trials, package installations 
 
 ## 6. Explicit limitations
 
-This document does not establish that the proposed compact envelope, 5 kg preferred mass target, 6 kg ceiling or 1 kg initial / 2 kg stretch payload is mechanically feasible. It does not establish a prototype, selected components, real sensor integration, runtime, navigation performance, waterproofing, fire resistance, IP rating, certified alarm function or safety certification. Stair climbing and outdoor terrain operation are out of scope. Unknown values remain TBD.
+This document does not establish that the proposed compact envelope, 8 kg target or 10 kg maximum is mechanically feasible. It does not establish a prototype, selected components, real sensor integration, runtime, navigation performance, waterproofing, fire resistance, IP rating, certified alarm function or safety certification. Payload capacity remains TBD. Stair climbing and outdoor terrain operation are out of scope. Unknown values remain TBD.
 
 ## 7. Review record
 
 Record revisions, reviewers, exact changed values, supporting datasheets/calculations, physical weighing records and unresolved risks. Never convert a planning target or supplier-listed mass into a measured result without weighing the actual installed part.
+
+## ข้อกำหนดภาษาไทย
+
+น้ำหนักรวมของหุ่นยนต์ PUI89 AI HOME ที่ผู้ก่อตั้งยืนยันคือ **เป้าหมาย 8 กิโลกรัม และสูงสุด 10 กิโลกรัม** โดยต้องรวมแชสซี ตัวถัง ล้อ มอเตอร์ แบตเตอรี่/BMS คอมพิวเตอร์ เซนเซอร์ สายไฟ ขั้วต่อ อุปกรณ์ป้องกัน และอุปกรณ์ติดตั้งทั้งหมด
+
+ข้อกำหนดใหม่นี้ใช้แทนตัวเลขเดิมที่เคยกำหนดเป้าหมาย 5 กิโลกรัมและสูงสุด 6 กิโลกรัม รวมถึงสมมติฐาน payload 1–2 กิโลกรัมเดิม โดยให้ยกเลิกการใช้ตัวเลขเดิมในการออกแบบและจัดทำ BOM ปัจจุบัน ความสามารถในการรับน้ำหนักบรรทุกยังไม่กำหนด ต้องวิเคราะห์และทดสอบแยกต่างหาก และห้ามทำให้น้ำหนักรวมของหุ่นยนต์เกิน 10 กิโลกรัม
+
+ตัวเลข 8 และ 10 กิโลกรัมเป็นข้อกำหนดการออกแบบ ไม่ใช่น้ำหนักต้นแบบที่วัดได้ ยังไม่มีการยืนยันว่าตัวถัง อุปกรณ์ หรือระบบขับเคลื่อนสามารถทำได้จริง ต้องจัดทำ BOM ที่มีแหล่งข้อมูล ตรวจสอบมวลของชิ้นส่วน และชั่งน้ำหนักหุ่นยนต์ที่ประกอบเสร็จจริงก่อนกล่าวอ้างว่าผ่านข้อกำหนด

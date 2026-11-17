@@ -137,7 +137,7 @@ The following documents define the proposed engineering baseline. They are requi
 - [Safety and cybersecurity requirements](docs/SAFETY_AND_CYBERSECURITY_REQUIREMENTS.md) — safety gates, privacy and security controls.
 - [Verification and validation plan](docs/VERIFICATION_AND_VALIDATION_PLAN.md) — software, simulation, bench and supervised test stages.
 - [Hardware specification](docs/HARDWARE_SPECIFICATION.md) — component selection criteria and TBD engineering values; research only, no purchasing.
-- [Preliminary internal layout and historical mass plan (superseded by the current 8 kg target / 10 kg maximum)](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.\n- [Indoor Perception MVP](docs/INDOOR_PERCEPTION_MVP.md) — initial deterministic CPU-first decision layer, conservative safe-hold logic and repeatable unit tests; no vision model or hardware integration is claimed.
+- [Preliminary internal layout and current mass budget (8 kg target / 10 kg maximum)](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.\n- [Indoor Perception MVP](docs/INDOOR_PERCEPTION_MVP.md) — initial deterministic CPU-first decision layer, conservative safe-hold logic and repeatable unit tests; no vision model or hardware integration is claimed.
 
 ### Software-only MVP demonstrator
 
@@ -194,7 +194,7 @@ Indoor four-wheel home assistant; 8 kg target design mass and 10 kg maximum desi
 
 **First evidence gate:** recorded indoor scenes and synthetic obstacle cases, followed by supervised tests in a controlled area. Measure obstacle misses, false alarms, localisation loss, safe-stop behaviour, privacy handling and resource use.
 
-**Not established:** reliable household autonomy, medical/fall monitoring, safe operation around children or pets, or validated physical mobility. See the [shared PTI specification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/perception/PUI89_PERCEPTION_TASK_INTELLIGENCE_V1.0.md) (maintainer repository access required).
+**Not established:** reliable household autonomy, medical/fall monitoring, safe operation around children or pets, or validated physical mobility. See the [public Shared AI Core overview](https://pui89.github.io/ai-core.htmlperception/PUI89_PERCEPTION_TASK_INTELLIGENCE_V1.0.md) (maintainer repository access required).
 
 ## Six Core Intelligence Groups — Product Allocation
 
@@ -364,7 +364,7 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 
 **Current status:** global readiness is a portfolio-wide design target. Each product must report its actual gate and evidence separately. No product is to be described as globally available or purchasable until the relevant commercial and regional release gates are met.
 
-**Shared standard:** [PUI89 Global Product Readiness Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/product/PUI89_GLOBAL_PRODUCT_READINESS_STANDARD_V1.0.md).
+**Shared standard:** [public PUI89 product architecture overview](https://pui89.github.io/ai-core.htmlproduct/PUI89_GLOBAL_PRODUCT_READINESS_STANDARD_V1.0.md).
 
 ---
 
@@ -406,7 +406,7 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 
 ## Shared Interaction Intelligence — AI HOME
 
-AI HOME uses the portfolio-wide interaction architecture defined in [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core). Its proposed indoor interaction profile includes:
+AI HOME uses the portfolio-wide interaction architecture defined in [PUI89 Shared AI Core public overview](https://pui89.github.io/ai-core.html). Its proposed indoor interaction profile includes:
 
 - Thai/English speech input and spoken responses, subject to language-specific evaluation.
 - Voice activity detection and an optional, locally processed wake phrase.
@@ -442,4 +442,16 @@ This product follows the proposed [PUI89 World-Class Engineering Standard v1.0](
 
 *Proposed indoor-assistant workflow. AI does not replace certified smoke, fire, carbon-monoxide or electrical safety devices.*
 
-This diagram follows the [PUI89 Technical Visual Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/PUI89_TECHNICAL_VISUAL_STANDARD_V1.0.md). It explains the proposed product-specific AI workflow and does not imply unverified implementation or physical capability.
+This diagram follows the [public PUI89 technical architecture overview](https://pui89.github.io/ai-core.htmlPUI89_TECHNICAL_VISUAL_STANDARD_V1.0.md). It explains the proposed product-specific AI workflow and does not imply unverified implementation or physical capability.
+
+## Portfolio consistency and founder-approved requirements
+
+**PUI89 AI HOME**
+
+Founder-approved complete robot mass requirement: **8 kg target; 10 kg maximum**, including battery, enclosure, compute, sensors, wiring and every installed component. These are design limits, not measured prototype mass. Any future BOM or prototype report must account for the complete assembled system.
+
+**ข้อกำหนดภาษาไทย**
+
+ข้อกำหนดน้ำหนักรวมที่ผู้ก่อตั้งยืนยัน: **เป้าหมาย 8 กิโลกรัม และสูงสุด 10 กิโลกรัม** รวมแบตเตอรี่ ตัวถัง คอมพิวเตอร์ เซนเซอร์ สายไฟ และอุปกรณ์ที่ติดตั้งทั้งหมด เป็นข้อกำหนดการออกแบบ ไม่ใช่น้ำหนักต้นแบบที่วัดได้
+
+**Portfolio boundary:** PUI89 has exactly six active products. Shared AI Core is infrastructure, not a product. Extreme Flood Rescue AI is inactive as a standalone product; preserve historical records but do not present it as an active product.
