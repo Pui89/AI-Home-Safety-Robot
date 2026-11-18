@@ -12,6 +12,8 @@ A software label, app toggle or status LED alone is not proof that the optical p
 
 ## 2. Required user controls
 
+**Selected control concept: manual-only sliding lens cover.** The owner or an authorised person must physically slide the opaque cover at the robot body to open or close the lens. The shutter is not motorised and has no software-, app-, network-, voice-, agent- or model-controlled opening mechanism. This is a design requirement, not a claim that hardware already exists.
+
 | ID | Requirement | Acceptance evidence | Status |
 |---|---|---|---|
 | HOME-PRIV-001 | Provide a manually operable, opaque physical shutter that fully covers the camera lens aperture. | Physical inspection from front and oblique angles; no usable optical path while closed. | PROPOSED |
@@ -23,13 +25,13 @@ A software label, app toggle or status LED alone is not proof that the optical p
 | HOME-PRIV-007 | No remote command, agent, model or network request may open the physical shutter. Opening requires deliberate local physical action by the owner or authorised person. | Interface/API threat review and remote-command rejection test. | PROPOSED |
 | HOME-PRIV-008 | The enclosure must cover all optical camera apertures; no secondary or auxiliary camera may remain active in Privacy Mode. | Hardware inventory and physical inspection. | PROPOSED |
 | HOME-PRIV-009 | Camera privacy state must be visible both on-device and in the local interface, with wording that distinguishes physical confirmation from software request. | UI/state tests for OPEN, CLOSED and UNKNOWN. | PROPOSED |
-| HOME-PRIV-010 | Camera shutter state must not be represented as microphone mute. Microphone capture requires its own independent physical control and status. | Hardware/UI inspection and audio-input tests. | PROPOSED |
+| HOME-PRIV-010 | Camera shutter state must not be represented as microphone mute. Microphone capture requires its own independent physical control and status. | Hardware/UI inspection and audio-input tests. | PROPOSED |\n| HOME-PRIV-011 | The shutter must be opened and closed only by direct manual operation of the physical slider at the robot; no motor, servo, solenoid or other powered actuator may move the cover. | Physical design inspection and attempted software/remote-actuation tests. | PROPOSED |\n| HOME-PRIV-012 | The slider must provide distinct tactile end positions/detents and a high-contrast position marker mechanically linked to the opaque cover; the marker must not be independently software-controlled. | Mechanical inspection and repeated-cycle usability/wear tests. | PROPOSED |
 
 ## 3. Recommended mechanical and electrical design
 
-The preferred first prototype is a **manual sliding opaque shutter** with a tactile detent and a mechanically coupled, high-contrast position marker. A simple manual mechanism avoids motor, firmware and remote-actuation failure modes. Materials, dimensions, wear life, cleanability and child-safety considerations remain to be selected and tested.
+The selected first-prototype concept is a **manual sliding opaque lens cover**. The owner moves the cover directly with a finger at the robot body; use tactile OPEN/CLOSED end positions or detents and a high-contrast marker mechanically coupled to the cover. **Do not use a motor, servo, solenoid, powered latch or any other actuator to move the shutter.** No application, voice assistant, network service, AI agent or model may open or close it. Materials, dimensions, travel, force, wear life, cleanability, pinch-point risk and child-safety considerations remain to be selected and tested.
 
-The camera power path should include a hardware inhibit controlled by the local physical privacy mechanism. When the shutter is fully closed, the camera module's power or capture-enable line must be disabled independently of the application. The hardware design must prevent a software process from re-enabling capture while Privacy Mode is engaged.
+The camera power path should include a hardware inhibit mechanically linked to the manual shutter position. When the opaque cover reaches its fully closed position, the physical mechanism must disable the camera module's power or capture-enable path independently of the application. The hardware design must prevent software from re-enabling capture while the shutter is closed. Opening the shutter by hand is necessary but not sufficient to start capture: a separate explicit software permission is still required. The shutter itself must never move in response to software or electrical commands.
 
 A shutter-position sensor may provide software status, but it is not a substitute for the visible mechanical marker or optical inspection. A sensor disagreement, broken wire, boot-time uncertainty or failed self-test must produce **UNKNOWN / CAMERA DISABLED**, never a false CLOSED confirmation.
 
@@ -70,7 +72,7 @@ The design review and tests must cover at least:
 - Camera power switch or capture-enable line stuck on.
 - Reboot, brownout, battery removal and power restoration.
 - Malicious or compromised software attempts to activate the camera.
-- Remote/network/voice command attempts to open the shutter.
+- Remote/network/voice command attempts to open or close the shutter.\n- Any proposed motor, servo, solenoid or powered actuator attempts to move the shutter.\n- Repeated manual operation causes wear, loose travel, marker misalignment or incomplete aperture coverage.
 - Secondary camera, depth camera or auxiliary optical sensor remains active.
 - Frames accidentally written to cache, logs, temporary files, crash reports or backups.
 - Microphone remains active while the UI incorrectly implies all sensors are private.
@@ -79,7 +81,7 @@ The design review and tests must cover at least:
 
 ## 8. Verification and release gates
 
-1. **Requirements review:** approved mechanical, electrical, privacy and threat requirements.
+1. **Requirements review:** approved mechanical, electrical, privacy and threat requirements; confirm manual-only operation and prohibit powered shutter actuation.
 2. **Bench prototype:** inspect full aperture coverage, tactile operation, marker linkage, camera power isolation and sensor state.
 3. **Fault injection:** test partial closure, jam, sensor disconnection, stuck states, power loss and hostile software requests.
 4. **Data-flow verification:** inspect memory, filesystem, caches, logs, crash handling, telemetry and backups to verify no routine image persistence.
@@ -89,7 +91,7 @@ The design review and tests must cover at least:
 
 ## 9. Current maturity and non-claims
 
-This document defines proposed requirements only. No physical shutter, camera power interlock, shutter sensor, microphone mute switch or privacy-state UI is established as built or tested. No selected component, CAD design, schematic, prototype, supplier or purchase is approved by this document.
+This document defines proposed requirements only. The selected concept is a manually operated sliding opaque lens cover with no powered shutter actuator. No physical shutter, camera power interlock, shutter sensor, microphone mute switch or privacy-state UI is established as built or tested. No selected component, CAD design, schematic, prototype, supplier or purchase is approved by this document.
 
 A physical shutter reduces the risk of visual capture through the covered aperture; it does not by itself protect stored data, other sensors, network interfaces, microphones, or against every possible tampering method. The design must be reviewed as a complete system.
 
