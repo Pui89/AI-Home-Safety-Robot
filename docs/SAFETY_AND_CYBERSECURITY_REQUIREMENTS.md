@@ -24,7 +24,7 @@
 | HOME-SAF-006 | Battery, charging and power design has independent protection appropriate to selected components. | Datasheets, electrical review and controlled tests. | NOT VERIFIED |
 | HOME-SAF-007 | Water, heat and fire exposure limits are defined before selecting enclosure/materials. | Hazard analysis and component/material evidence. | NOT VERIFIED |
 | HOME-SAF-008 | Reports clearly distinguish observation, inference, prediction and recommendation. | Output contract and user-interface tests. | NOT VERIFIED |
-| HOME-SAF-009 | Camera privacy uses an opaque physical shutter and independent hardware capture/power inhibit; shutter-state uncertainty or fault fails closed and is never reported as physically covered. | Physical inspection, electrical measurement, fault injection and state-reporting tests. | NOT IMPLEMENTED |
+| HOME-SAF-009 | Camera privacy uses a hand-operated opaque sliding lens cover with no powered actuator, plus an independent hardware capture/power inhibit mechanically linked to the closed position; only direct local manual action may open the cover. Shutter-state uncertainty or fault fails closed and is never reported as physically covered. | Physical inspection, manual-cycle/wear tests, electrical measurement, fault injection and attempted powered/remote override tests. | NOT IMPLEMENTED |
 
 ## 3. Cybersecurity requirements
 
@@ -38,7 +38,7 @@
 | HOME-CYB-006 | Updates are authenticated, integrity-checked and recoverable. | Update design review and rollback test. | NOT IMPLEMENTED |
 | HOME-CYB-007 | Security events and failed access attempts are logged without collecting unnecessary sensitive content. | Log inspection and privacy review. | NOT VERIFIED |
 | HOME-CYB-008 | Offline mode does not silently disable essential safety boundaries. | Network-loss tests. | NOT VERIFIED |
-| HOME-CYB-009 | Remote, voice, agent or model requests cannot open/override the physical camera shutter or bypass its hardware capture inhibit. | Threat review, interface tests and attempted-override fault tests. | NOT VERIFIED |
+| HOME-CYB-009 | Remote, voice, agent or model requests cannot move/open/close the manual camera shutter or bypass its hardware capture inhibit; no powered shutter actuator is permitted. | Threat review, interface tests and attempted powered/remote-actuation tests. | NOT VERIFIED |
 | HOME-CYB-010 | Routine indoor camera frames are not persisted to caches, logs, crash reports, telemetry or backups in privacy-first mode; microphone state is controlled independently. | Data-flow inspection and negative persistence/audio-state tests. | NOT VERIFIED |
 
 ## 4. Threat coverage
