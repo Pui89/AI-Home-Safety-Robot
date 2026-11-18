@@ -38,6 +38,9 @@ Only modalities supported by an identified, lawful, tested sensor or dataset may
 | HOME-REQ-008 | Software, models and dependencies are traceable to exact versions and licences. | Reproducible inventory with provenance and licence review. | PROPOSED |
 | HOME-REQ-009 | Each supported sensing function has a documented validation method and known limitations. | Test plan, ground truth, calibration record and results. | PROPOSED |
 | HOME-REQ-010 | The product can report failures and recover without silently discarding evidence. | Failure injection and recovery tests. | PROPOSED |
+| HOME-REQ-011 | Provide an owner-operated physical opaque camera shutter, mechanically visible closed/open indication and independent hardware camera inhibit; uncertain shutter state must disable capture and report UNKNOWN. | Physical inspection, power-rail test, sensor fault injection and remote-override rejection test. | PROPOSED |
+| HOME-REQ-012 | Default to no persistent indoor image/video recording; any visual analysis must be explicitly enabled, local-first and transient where feasible, with no routine frame persistence in caches, logs, crash reports or backups. | Data-flow inspection and filesystem/cache/log/crash-dump tests. | PROPOSED |
+| HOME-REQ-013 | Camera privacy and microphone mute are separate controls and states; the camera shutter must never be presented as muting audio. | Hardware and UI inspection plus independent camera/audio input tests. | PROPOSED |
 
 ## 5. Physical design targets
 
@@ -49,13 +52,14 @@ Only modalities supported by an identified, lawful, tested sensor or dataset may
 - Use the [preliminary internal layout and mass-budget plan](AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) for planning only; allocations are not measured component masses or selected hardware.
 - Protection against water ingress, heat and fire: define from a documented hazard analysis and verified component/material ratings. Do not describe the robot as waterproof or fireproof without applicable test evidence.
 
-
 ## 6. Human factors
 
 - Show what was observed, when, where, by which sensor and with what quality.
 - Explain why a recommendation was generated and what remains unknown.
 - Provide a clear way to dismiss, acknowledge or escalate a recommendation.
 - Avoid alarming language where evidence is weak; never delay emergency action.
+- Make the camera's physical shutter position obvious at a glance; do not rely only on app text, an LED or a software toggle.
+- If the shutter is jammed or its state cannot be verified, clearly report **CAMERA STATE UNKNOWN — CAMERA DISABLED**.
 
 ## 7. Requirement change control
 
@@ -65,6 +69,7 @@ Record each change with ID, reason, author, date, affected tests and evidence. A
 
 - [System architecture](SYSTEM_ARCHITECTURE.md)
 - [Safety and cybersecurity requirements](SAFETY_AND_CYBERSECURITY_REQUIREMENTS.md)
+- [Physical Privacy Protection Requirements](PHYSICAL_PRIVACY_PROTECTION_REQUIREMENTS.md)
 - [Verification and validation plan](VERIFICATION_AND_VALIDATION_PLAN.md)
 - [Hardware specification and selection criteria](HARDWARE_SPECIFICATION.md)
 - [Security threat model](SECURITY_THREAT_MODEL.md)
