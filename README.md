@@ -1,5 +1,21 @@
 # PUI89 AI HOME — Indoor Home Assistant Robot
 
+## Product and AI system update — 18 November 2026
+
+**Public product summary (EN):** PUI89 AI HOME is a compact, low-profile, four-wheel indoor assistant concept. It observes owner-authorised home conditions, identifies selected unusual events and sends understandable alerts so residents can verify and respond.
+
+**เทคโนโลยีและประโยชน์ (TH):** หุ่นยนต์ผู้ช่วยภายในบ้านแบบ 4 ล้อ ช่วยสังเกตความเคลื่อนไหว การเข้าออก เสียงเตือน และข้อมูลจากเซนเซอร์ที่ติดตั้ง เช่น ควัน ก๊าซ อุณหภูมิ หรือการรั่วซึมของน้ำ เมื่อพบเหตุที่กำหนดไว้จะส่งสัญญาณให้เจ้าของตรวจสอบ เหมาะสำหรับครอบครัว ผู้สูงอายุ ผู้ดูแล และผู้จัดการอาคาร
+
+**AI technology direction:** computer vision and selected object/motion detection; anomaly detection against configured context; optional sound-event classification; edge AI; IoT sensor integration; event fusion, timestamped history, privacy permissions and phone notifications. Sensor types must be selected for the hazard and installed/calibrated appropriately.
+
+**Physical design target:** four-wheel indoor robot; 25–28 cm wide, 30–33 cm deep, 30–35 cm high; 8 kg target complete mass and 10 kg maximum design ceiling. These remain design targets; payload and detailed mechanical performance require validation.
+
+**Safety boundary:** AI HOME is an additional awareness layer, not a replacement for certified smoke, fire, carbon-monoxide, gas, electrical or water-protection devices. No physical robot, live sensor integration, alert-delivery reliability or validated home-safety performance is claimed. Consequential alerts require human verification and privacy-aware configuration.
+
+**Project website:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [PUI89 portfolio](https://pui89.github.io/)
+
+---
+
 ![PUI89 AI HOME — compact low-profile indoor four-wheel assistant concept](docs/images/ai-home-compact-four-wheel.svg)
 
 ## Product at a glance
