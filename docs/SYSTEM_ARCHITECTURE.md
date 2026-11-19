@@ -75,3 +75,33 @@ Retention periods, encryption design, access roles and backup handling remain **
 ## 7. Architecture acceptance
 
 Architecture review passes only when every implemented component has a defined input/output contract, trust boundary, failure behaviour, owner, tests and evidence reference. A diagram alone does not establish implementation.
+
+
+## 8. AI HOME Household Network — proposed multi-unit architecture
+
+**Status: proposed architecture only; no multi-robot network implementation or validation is claimed.**
+
+The product topology is floor-based: one AI HOME robot and one dedicated charging dock per serviced floor. A three-floor household is planned as three robots and three docks. Each robot owns its local sensing, local state, local alerts and local recovery. A household coordinator exchanges minimum necessary event metadata and device-health state to produce a household-level view.
+
+### Network contracts and behaviour
+- Every unit has a unique device identity, assigned floor/zone, software/configuration version, health state and last-seen timestamp.
+- Network messages are versioned, authenticated, replay-resistant and schema-validated. Exact protocols and key management belong in private engineering design; public documentation must not expose credentials or sensitive network configuration.
+- Event messages preserve source device, event ID, observation time, receipt time, severity, evidence references, uncertainty and acknowledgement state.
+- The coordinator may correlate events and suppress duplicate notifications only when equivalence is supported by explicit rules. Original records remain available; distinct or conflicting observations must not be silently merged.
+- Clock drift, delayed delivery, duplicated messages, out-of-order events and conflicting state must be represented explicitly.
+- A network partition must not disable local unit alerts or safe recovery. Household status must mark disconnected units unavailable/unknown, not safe or monitored.
+- Raw audio/video is not shared by default. Sharing requires owner authorisation and documented purpose, access and retention rules.
+- Robots are not assumed to traverse stairs or lifts. Floor transfers are outside the baseline architecture.
+
+### Docking boundary
+Each robot is paired operationally with one dedicated dock. Charging permission depends on compatible dock identity, verified alignment/connection state, battery/BMS health and electrical safeguards. Failed or uncertain docking must be reported and must not trigger repeated unsafe movement. Docking performance and charging safety require separate bench and supervised tests.
+
+### Failure modes
+| Failure | Required response |
+|---|---|
+| Household network unavailable | Continue supported local operation; mark household coordination unavailable. |
+| Unit offline | Preserve last-known state with timestamp; mark stale/unavailable. |
+| Duplicate or delayed event | Preserve original event identity; deduplicate only notification when justified. |
+| Conflicting floor reports | Show both sources and uncertainty; require human review. |
+| Coordinator unavailable | Units continue local operation; coordinator status is reported unavailable. |
+| Dock mismatch or charging fault | Deny charging progression, report fault and require safe recovery. |
