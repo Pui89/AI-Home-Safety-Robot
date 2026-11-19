@@ -605,3 +605,11 @@ Each record should include, where available: unique incident ID; local date/time
 **ขอบเขตหลักฐานเฉพาะผลิตภัณฑ์:** Configured home-environment anomalies and supported sensor events, such as moisture/leak signals, unusual heat/smoke indications where suitable sensors exist, or device faults. Define privacy zones and event-triggered capture; this is not a certified life-safety alarm.
 
 **สถานะหลักฐาน:** ข้อกำหนดการออกแบบเท่านั้น การบันทึกภาพ การจัดเก็บ การค้นหาตามวัน/เดือน การเล่นเสียงย้อนหลัง การรักษาหลักฐาน ความเป็นส่วนตัว และการกู้คืนยังเป็น **Unknown / Not Tested** จนกว่าจะพัฒนาและทดสอบกับผลิตภัณฑ์จริง
+
+## PUI89 Easy Direct Control Standard v1.0 — Proposed
+
+This product follows the shared [PUI89 Easy Direct Control Standard](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_EASY_DIRECT_CONTROL_STANDARD_V1.0.md). Everyday operation must be possible directly on the robot, without requiring a smartphone, account, pairing or application.
+
+**Proposed product controls:** large POWER and START / STOP controls; simple MODE choices such as Home Assistance, Follow and Go to a selected destination only where those functions are implemented; an easy-to-find HELP / CALL control if supported; and a readable on-device display for status, battery and alerts. Provide a clearly reachable physical stop control.
+
+**Usability boundary:** use plain Thai/English labels, recognisable icons, high contrast, tactilely distinct buttons and audible/visual confirmation. Do not imply that proposed mobility or assistance modes are implemented or safe for unsupervised use.
