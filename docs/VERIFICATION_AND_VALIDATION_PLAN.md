@@ -65,3 +65,21 @@ For each test, record:
 - **Sensor bench baseline:** exact sensor and calibration evidence available; no claims beyond test conditions.
 - **Physical prototype baseline:** approved hazard analysis, independent emergency stop, controlled environment, trained supervision and documented T3/T4 results.
 - **Public/product claims:** claims must match evidence and applicable independent approvals. Software tests do not establish product safety or certification.
+
+
+## 7. Household Network verification — proposed test matrix
+
+No test execution is claimed by this plan. Start with deterministic synthetic tests, then controlled bench tests, then supervised household trials.
+
+| Test ID | Scenario | Expected result |
+|---|---|---|
+| HOME-NET-001 | Register one unit and one dock to one floor | Correct one-to-one assignment is displayed and recorded. |
+| HOME-NET-002 | Configure a three-floor household | Exactly three units and three dedicated docks are represented in the plan. |
+| HOME-NET-003 | Unit sends a timestamped event | Source identity, floor, event ID, severity and uncertainty are preserved. |
+| HOME-NET-004 | Duplicate event is delivered | Notification duplication is handled without deleting or merging original evidence. |
+| HOME-NET-005 | One floor loses network connectivity | Local operation continues; household view marks that floor unavailable/stale. |
+| HOME-NET-006 | Network reconnects after delayed/out-of-order messages | State is reconciled with timestamps and provenance; conflicts remain visible. |
+| HOME-NET-007 | Coordinator becomes unavailable | Each unit retains supported local alerts and safe recovery. |
+| HOME-NET-008 | Raw media sharing is not authorised | No audio/video payload is exchanged between units. |
+| HOME-NET-009 | Wrong dock or uncertain alignment is detected | Charging is denied or held and a clear fault is reported. |
+| HOME-NET-010 | A floor has no recent heartbeat | It is not shown as safe, online or monitored. |
