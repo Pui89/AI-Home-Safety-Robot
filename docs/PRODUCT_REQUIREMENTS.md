@@ -73,3 +73,21 @@ Record each change with ID, reason, author, date, affected tests and evidence. A
 - [Verification and validation plan](VERIFICATION_AND_VALIDATION_PLAN.md)
 - [Hardware specification and selection criteria](HARDWARE_SPECIFICATION.md)
 - [Security threat model](SECURITY_THREAT_MODEL.md)
+
+
+## 9. Multi-floor product configuration — AI HOME Household Network
+
+**Status: PROPOSED / NOT VERIFIED.** The standard configuration is one AI HOME robot plus one dedicated charging dock per serviced floor. A three-floor home is planned as three robots and three docks; for N serviced floors, plan N robots and N docks.
+
+Each unit is assigned to a floor/zone and owns its local sensing, alerts, status and event history. The proposed Household Network coordinates device health, floor assignment, timestamped event summaries, severity, uncertainty, acknowledgement, cross-floor correlation and household-level status.
+
+Requirements:
+- Do not assume stair climbing, lift use or autonomous floor transfer.
+- Preserve local alerts and basic recovery during network/internet loss; clearly mark household coordination unavailable.
+- Share minimum necessary event metadata by default; raw audio/video is not distributed between units by default.
+- Preserve source identity and original event records; handle duplicates, delayed messages, clock drift and conflicting reports explicitly.
+- Assign one dedicated dock per unit; charging compatibility, alignment, electrical and battery safeguards require verification.
+- Do not treat an offline floor as monitored or safe. Consequential alerts require human verification.
+- The quantity rule supports package planning only; it is not a final price, installation promise or coverage guarantee.
+
+Acceptance evidence must include repeatable 1-, 2- and 3-unit tests for registration, floor assignment, event delivery, duplicate handling, offline behaviour, network recovery, privacy boundaries, alert history and dock fault handling. All requirements remain PROPOSED / NOT VERIFIED until evidence is reviewed.
