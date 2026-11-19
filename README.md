@@ -1,5 +1,15 @@
 # PUI89 AI HOME — Indoor Home Assistant Robot
 
+
+## PUI89 Product Philosophy
+
+> **Build what you wish existed as a user.**  
+> **สร้างสิ่งที่คุณอยากให้มีในฐานะผู้ใช้งาน**
+
+Start with the user, then apply engineering to build products that provide practical value in real life. Start with residents’ real needs: provide understandable home awareness and useful alerts, with essential operation available directly on the robot.
+
+หลักการคือเริ่มต้นจากผู้ใช้งาน แล้วจึงใช้วิศวกรรมสร้างผลิตภัณฑ์ที่มีประโยชน์ในชีวิตจริง โดยยึดปัญหาและบริบทการใช้งานจริงเป็นหลัก ไม่เพิ่มเทคโนโลยีหรือกล่าวอ้างความสามารถโดยไม่มีเหตุผลและหลักฐานรองรับ。
+
 ## Product and AI system update — 18 November 2026
 
 **Public product summary (EN):** PUI89 AI HOME is a compact, low-profile, four-wheel indoor assistant concept. It observes owner-authorised home conditions, identifies selected unusual events and sends understandable alerts so residents can verify and respond.
