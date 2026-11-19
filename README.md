@@ -1,5 +1,15 @@
 # PUI89 AI HOME — Indoor Home Assistant Robot
 
+
+## PUI89 Product Philosophy
+
+> **Build what you wish existed as a user.**  
+> **สร้างสิ่งที่คุณอยากให้มีในฐานะผู้ใช้งาน**
+
+Start with the user, then apply engineering to build products that provide practical value in real life. Start with residents’ real needs: provide understandable home awareness and useful alerts, with essential operation available directly on the robot.
+
+หลักการคือเริ่มต้นจากผู้ใช้งาน แล้วจึงใช้วิศวกรรมสร้างผลิตภัณฑ์ที่มีประโยชน์ในชีวิตจริง โดยยึดปัญหาและบริบทการใช้งานจริงเป็นหลัก ไม่เพิ่มเทคโนโลยีหรือกล่าวอ้างความสามารถโดยไม่มีเหตุผลและหลักฐานรองรับ。
+
 ## Product and AI system update — 18 November 2026
 
 **Public product summary (EN):** PUI89 AI HOME is a compact, low-profile, four-wheel indoor assistant concept. It observes owner-authorised home conditions, identifies selected unusual events and sends understandable alerts so residents can verify and respond.
@@ -696,3 +706,8 @@ AI HOME แต่ละตัวทำหน้าที่รับข้อม
 ต้องทดสอบการลงทะเบียนอุปกรณ์และกำหนดชั้น การค้นหาและยืนยันตัวตนในเครือข่าย เวลาให้ตรงกัน การส่งและรับทราบเหตุการณ์ การจัดการเหตุการณ์ซ้ำ สถานะออฟไลน์/ข้อมูลล้าสมัย การแยกเครือข่ายและการกลับมาเชื่อมต่อ ขอบเขตความเป็นส่วนตัว ประวัติการแจ้งเตือน และความปลอดภัยของการชาร์จ/แท่นจอด เริ่มจากการทดสอบจำลองแบบทำซ้ำได้สำหรับ 1, 2 และ 3 ตัว ก่อนทดสอบบนโต๊ะและในบ้านภายใต้การดูแล
 
 **ข้อกำหนดนี้ยังไม่ใช่หลักฐานว่ามีการประสานงานหลายหุ่นยนต์ การครอบคลุมหลายชั้น ความน่าเชื่อถือของการชาร์จ หรือประสิทธิภาพความปลอดภัยภายในบ้านที่สร้างและทดสอบแล้ว**
+
+
+## PUI89 Product Operating Coverage Standard
+
+Follow the [PUI89 Product Operating Coverage Standard v1.0](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_PRODUCT_OPERATING_COVERAGE_STANDARD_V1.0.md) for per-unit allocation, appropriate coverage measurements, evidence labels, validation records and public-claim controls. This is a proposed shared requirement, not proof of physical performance. Do not publish numerical area, throughput, range, runtime, accuracy or productivity claims without product-specific test evidence. Product-specific requirements and safety boundaries in this repository remain controlling.
