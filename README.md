@@ -151,6 +151,12 @@ Support household safety awareness without presenting AI HOME as a medical devic
 
 The project is designed to use versioned `WorldState`, `Observation`, `ActionProposal` and `FailureReport` contracts, with evidence provenance, timestamps, sensor-health checks, uncertainty handling, safety gates and human-reviewed recommendations.
 
+## AI Model & Intelligence profile
+
+**Candidate capability profile:** Object Detection, Image Segmentation and Object Tracking for indoor scene awareness; Sensor Fusion and Anomaly Detection for environmental/sensor-health alerts; bounded VLM/LLM assistance for explanation and communication; Predictive Models only for evidence-supported trends. Certified safety devices remain primary; AI is not an emergency authority.
+
+All nine shared capability families and their definitions, evaluation requirements, provenance/uncertainty rules and safety boundaries are maintained in the [PUI89 Shared AI Core Model Intelligence Framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_MODEL_INTELLIGENCE_FRAMEWORK_V1.0.md). This product profile is a **candidate engineering allocation**, not evidence of model installation, runtime integration, benchmark results, field validation or certified performance. Select and enable each capability only after product-specific requirements, approved data, compute/energy budgets and verification gates are satisfied.
+
 ## Safety and privacy
 
 - Certified smoke, fire, carbon-monoxide and electrical protection devices remain primary.
