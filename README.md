@@ -754,3 +754,10 @@ AI HOME แต่ละตัวทำหน้าที่รับข้อม
 - Sensor faults, uncertainty, network loss and low battery must be visible to the user; the robot must not report an unobserved area as safe.
 
 **Capacity evidence status:** Physical values are design targets or TBD; no physical robot or validated safety capability is established.
+
+
+## Physical & Multimodal Sensor Privacy
+
+PUI89 adopts the [Physical & Multimodal Sensor Privacy Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/privacy/PUI89_PHYSICAL_MULTIMODAL_SENSOR_PRIVACY_STANDARD_V1.0.md) as a shared engineering requirement. All cameras and microphones require independent physical controls. Home maps, audio, images, occupancy and environmental histories are private by default. Independent certified household alarms are not replaced or disabled by robot privacy controls.
+
+**Evidence status:** requirements/specification only. No product-level hardware implementation or verification is claimed by this README section.
