@@ -696,3 +696,61 @@ AI HOME แต่ละตัวทำหน้าที่รับข้อม
 ต้องทดสอบการลงทะเบียนอุปกรณ์และกำหนดชั้น การค้นหาและยืนยันตัวตนในเครือข่าย เวลาให้ตรงกัน การส่งและรับทราบเหตุการณ์ การจัดการเหตุการณ์ซ้ำ สถานะออฟไลน์/ข้อมูลล้าสมัย การแยกเครือข่ายและการกลับมาเชื่อมต่อ ขอบเขตความเป็นส่วนตัว ประวัติการแจ้งเตือน และความปลอดภัยของการชาร์จ/แท่นจอด เริ่มจากการทดสอบจำลองแบบทำซ้ำได้สำหรับ 1, 2 และ 3 ตัว ก่อนทดสอบบนโต๊ะและในบ้านภายใต้การดูแล
 
 **ข้อกำหนดนี้ยังไม่ใช่หลักฐานว่ามีการประสานงานหลายหุ่นยนต์ การครอบคลุมหลายชั้น ความน่าเชื่อถือของการชาร์จ หรือประสิทธิภาพความปลอดภัยภายในบ้านที่สร้างและทดสอบแล้ว**
+
+## Robot Capabilities & Functional Capacity
+
+**Scope boundary:** AI HOME is a proposed compact, four-wheel indoor assistant. The values below are design targets or requirements unless explicitly identified as measured; no completed physical robot or validated home-safety performance is established.
+
+### 1. Physical capacity
+- Four-wheel, low-profile indoor platform.
+- Width: **25–28 cm target**; depth: **30–33 cm target**; height: **30–35 cm target**.
+- Complete robot mass: **8 kg target; 10 kg maximum design ceiling**, including battery and installed hardware.
+- Payload: **TBD**. Existing engineering notes identify a 1 kg initial evaluation and 2 kg stretch target for analysis/testing; neither is a validated payload rating.
+- Define centre of gravity, tip resistance, wheel loading, enclosure strength and safe contact limits before design freeze.
+
+### 2. Mobility capacity
+- Intended for supervised indoor floor operation and navigation between accessible rooms.
+- Define speed, turning radius, floor-transition capability, slope, obstacle clearance, stopping distance and docking tolerance through analysis and testing.
+- Stairs, escalators, outdoor terrain and unvalidated wet-floor operation are not claimed.
+- **Measured mobility envelope:** TBD.
+
+### 3. Perception capacity
+- Six sensor groups are architectural candidates: Vision; Audio; Chemical; Thermal; Tactile & Vibration; Environmental & Safety.
+- Perceive permitted indoor scenes, people, pets, objects, selected sound events and supported sensor conditions.
+- Support spatial awareness, obstacle detection, event tracking, sensor fusion, anomaly cues and sensor-health reporting.
+- Do not infer identity, criminality, medical diagnosis or intent from appearance. Respect owner-defined privacy zones and permissions.
+- Detection ranges, coverage, accuracy and false-alarm rates remain TBD until tested with selected sensors.
+
+### 4. Computing capacity
+- Prefer local edge processing, CPU-first operation and resource-aware model selection; use GPU/NPU only where justified by measured need.
+- Define compute, memory, storage, thermal and startup budgets after component selection.
+- Essential status, safety alerts and local controls should remain understandable offline.
+- **Processor, RAM, storage and measured inference performance:** TBD.
+
+### 5. Power capacity
+- Define battery energy, runtime by operating mode, peak load, charging time, battery-management protection and thermal limits.
+- Low-battery behaviour must preserve safe stopping and clear user alerts.
+- **Battery specification and measured runtime:** TBD.
+
+### 6. Communication capacity
+- Local/offline operation is the default for essential functions.
+- Define owner-authorised local network and notification interfaces, pairing, loss-of-connection behaviour and data minimisation.
+- No always-on cloud dependency or unapproved remote access is required.
+- **Wireless protocols and range:** TBD.
+
+### 7. Safety capacity
+- Include safe stop, manual recovery, obstacle-aware movement, fault reporting and an accessible emergency stop in the future hardware requirements.
+- AI HOME is an additional awareness layer, not a replacement for certified smoke, fire, CO, gas, electrical or water-protection devices.
+- Consequential alerts require human verification; no autonomous locking, unlocking, appliance control or physical intervention.
+
+### 8. Maintenance capacity
+- Plan for accessible sensor replacement, camera/microphone cleaning, calibration checks, wheel/motor inspection, battery service and local diagnostic history.
+- Define service access and replaceable modules without exposing private home data.
+- **Maintenance intervals and validated service procedures:** TBD.
+
+### 9. Operating limits
+- Indoor assistant concept only; actual supported floor types, room coverage, speed, payload and runtime remain unvalidated.
+- No stair climbing, medical monitoring/diagnosis, certified hazard detection, physical security enforcement or guaranteed emergency response is claimed.
+- Sensor faults, uncertainty, network loss and low battery must be visible to the user; the robot must not report an unobserved area as safe.
+
+**Capacity evidence status:** Physical values are design targets or TBD; no physical robot or validated safety capability is established.
