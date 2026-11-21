@@ -49,3 +49,19 @@ Do not choose a generic “power off” response. Derive the safe state from the
 
 ## Release gate
 This plan is complete as documentation only when reviewed and approved by the responsible engineering and safety reviewers. Product offline-readiness remains **Not yet demonstrated** until applicable tests pass on the actual product build with retained evidence.
+
+
+## Detailed implementation and release checklist
+
+- Produce offline capability matrix with hardware/sensor/model/compute/storage/power dependencies.
+- Define physical controls, local indicators, stop/E-stop and reset; independent from phone/app/network/cloud.
+- Define fault responses for phone/app, radio, Wi-Fi, internet/cloud, authentication, stale data, sensors/models and power loss.
+- Partition safety logic from remote services; reject expired/duplicate/replayed/out-of-order commands; reconnect only after fresh sync and deliberate local authorisation.
+- Define bounded local logs, integrity, retention, storage-full/corrupt handling and offline export.
+- Supply complete printed User Manual and Quick Start & Safety Guide; QR supplementary; test manual-only use.
+- Run OFF-01–OFF-15 on exact build; record setup, procedure, expected/actual, evidence, tester/date, defects and disposition. N/A requires approved safety rationale.
+- No offline-ready claim until applicable tests pass and safety/engineering reviewers approve.
+
+### Product-specific scope
+- **PUI89 AI HOME:** Indoor four-wheel assistant concept. Local controls, safety sensing and stop must work without app/cloud. Remote loss during movement requires an occupancy-, obstacle- and stability-aware safe response; no unattended movement into unknown/occupied areas.
+- **PUI89 AI NOMAD:** Outdoor/mobile assistant concept. Local operator control and stop must work without app/cloud. Link loss during movement requires hazard-analysis-defined controlled stop/hold, fresh local authorisation and no automatic resume.
