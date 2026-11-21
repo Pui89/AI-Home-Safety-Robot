@@ -778,3 +778,12 @@ PUI89 adopts the [Physical & Multimodal Sensor Privacy Standard v1.0](https://gi
 PUI89 adopts the [Long-Life Battery & Energy Intelligence Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/energy/PUI89_LONG_LIFE_BATTERY_ENERGY_INTELLIGENCE_STANDARD_V1.0.md) as a shared engineering requirement. Prioritise long standby and efficient intermittent sensing, alerts and indoor mobility. Balance battery capacity against the 8 kg target / 10 kg maximum overall robot mass.
 
 Battery runtime, chemistry, capacity, cycle life, charging performance and safety compliance remain **TBD until designed and evidenced**. No unverified runtime or battery-life claim is made. The design must include an energy budget, independent BMS protections, thermal/electrical safety, service strategy and representative runtime validation.
+
+
+## Offline Independence & Connectivity Resilience
+
+**The product must work without the app. Safety must work without connectivity.** Basic supported local operation, local status and safety controls must not require a smartphone, app, Wi-Fi, internet or cloud. The complete printed User Manual and printed Quick Start & Safety Guide are supplied inside the product box in the destination-market language. Both are readable without a smartphone, QR scan, account, app, Wi-Fi or internet. QR and short URL are optional supplements. QR and short URL are optional supplements. On link loss, remote commands are disabled and the product follows its own hazard-based safe state. See the [PUI89 Offline Independence & Connectivity Resilience Standard v1.0](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_OFFLINE_INDEPENDENCE_CONNECTIVITY_RESILIENCE_STANDARD_V1.0.md) and the [product manual/Remote Companion specification](docs/PRODUCT_MANUAL_AND_REMOTE_COMPANION_STANDARD_V1.md).
+
+**Product-specific offline baseline:** Local start/stop, physical stop, locally available safety sensing/control, local status and essential user interaction. A phone or home Wi-Fi outage must not disable the physical stop or create unpredictable motion. On communication loss, stop/hold mobility as defined by the indoor hazard analysis; preserve essential local sensing/alerts where supported. No movement into occupied or unsafe areas based only on remote commands.
+
+These are development requirements, not claims of implemented, tested or validated capability.
