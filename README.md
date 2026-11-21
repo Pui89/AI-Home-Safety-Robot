@@ -787,3 +787,20 @@ Battery runtime, chemistry, capacity, cycle life, charging performance and safet
 **Product-specific offline baseline:** Local start/stop, physical stop, locally available safety sensing/control, local status and essential user interaction. A phone or home Wi-Fi outage must not disable the physical stop or create unpredictable motion. On communication loss, stop/hold mobility as defined by the indoor hazard analysis; preserve essential local sensing/alerts where supported. No movement into occupied or unsafe areas based only on remote commands.
 
 These are development requirements, not claims of implemented, tested or validated capability.
+
+
+## Evidence Gate & Product Maturity
+
+PUI89 applies a sequential evidence-gated maturity model: **Proposed → Specified → Implemented → Tested → Validated → Product-Ready**. Maturity must be assessed for this product and each material capability against pre-defined acceptance criteria. Concept images, code, passing CI, demos or simulations alone do not establish validation or product readiness.
+
+**Current assessment against PUI89 Standard v1.0: NOT ASSESSED.** This means this product has not yet been formally assessed against the standard; it does not mean no engineering work exists. Existing requirements, implementation and test evidence must be mapped before assigning a maturity level.
+
+| Public status field | Current record |
+|---|---|
+| Maturity level | NOT YET FORMALLY ASSESSED |
+| Evidence status | NOT ASSESSED |
+| Verified scope | Only claims supported by this README and linked, versioned evidence |
+| Product-Ready | Not established |
+| Next gate | Map requirements, implementation and test evidence; define acceptance criteria; review the evidence package |
+
+[Read the PUI89 Evidence-Based Engineering & Product Readiness Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_EVIDENCE_BASED_ENGINEERING_PRODUCT_READINESS_STANDARD_V1.0.md) · [ภาษาไทย](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_EVIDENCE_BASED_ENGINEERING_PRODUCT_READINESS_STANDARD_V1.0.th.md)
