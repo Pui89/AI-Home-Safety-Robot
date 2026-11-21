@@ -1,5 +1,8 @@
 # PUI89 AI HOME — Indoor Home Assistant Robot
 
+[English](README.md) · [ภาษาไทย](README.th.md)
+
+
 ## Product and AI system update — 18 November 2026
 
 **Public product summary (EN):** PUI89 AI HOME is a compact, low-profile, four-wheel indoor assistant concept. It observes owner-authorised home conditions, identifies selected unusual events and sends understandable alerts so residents can verify and respond.
