@@ -787,3 +787,19 @@ Battery runtime, chemistry, capacity, cycle life, charging performance and safet
 **Product-specific offline baseline:** Local start/stop, physical stop, locally available safety sensing/control, local status and essential user interaction. A phone or home Wi-Fi outage must not disable the physical stop or create unpredictable motion. On communication loss, stop/hold mobility as defined by the indoor hazard analysis; preserve essential local sensing/alerts where supported. No movement into occupied or unsafe areas based only on remote commands.
 
 These are development requirements, not claims of implemented, tested or validated capability.
+
+
+## Latest engineering progress — 22 November 2026
+
+**Maturity:** Implemented — early software foundation. **Evidence status:** PARTIAL. Implemented software and documented requirements do not establish a built robot or validated home-safety performance.
+
+**Recent verified repository progress:**
+- Merged offline-first controls, printed manual and remote-companion requirements (PR #101).
+- Added explicit local-operation, connectivity-loss and verification requirements; essential local controls and safety functions are specified not to depend on an app or internet connection.
+- The complete-mass design boundary remains an 8 kg target and 10 kg maximum, not a measured prototype result.
+
+**Not established:** physical hardware, integrated sensors, validated mobility, certified household alarms, reliable hazard detection or real-home performance.
+
+**Next evidence gate:** complete a narrow software-only home-awareness demonstrator using traceable mock sensor observations, explicit unknown/fault states and repeatable tests. Then assess selected sensors separately under controlled conditions before any physical integration claim.
+
+**Last reviewed:** 22 November 2026. See [offline-first/manual PR #101](https://github.com/Pui89/AI-Home-Safety-Robot/pull/101).
