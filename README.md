@@ -832,3 +832,17 @@ This product follows the portfolio-wide [PUI89 Future-Ready Technology Policy v1
 | Modular robotics & bounded agents | Separate replaceable perception/planning modules; any assistant agent must have least privilege, audit, human approval and no unrestricted motion authority. |
 
 **First gate:** local privacy design, target-hardware resource budget and safe interaction requirements. **Status:** Planned roadmap only.
+
+
+## Long-Term Technology Evolution & Anti-Obsolescence Strategy (2027–2030+)
+
+This forward-looking roadmap extends the current P1–P4 development sequence beyond the 2026 trend baseline. It identifies evaluation horizons, not guaranteed future capabilities or fixed adoption dates. Each technology remains conditional on verified user value, provenance and licensing, target-hardware fit, safety, maintainability and reproducible evidence.
+
+| Horizon | Product evolution focus |
+|---|---|
+| 2027 | Define privacy-first local data handling, supported-command contracts, human confirmation, emergency stop and replaceable compact-model interfaces. |
+| 2028 | Evaluate vision-language interaction, indoor mapping and human-aware navigation on target hardware; test ambiguous commands and safe degraded behaviour. |
+| 2029 | Explore context-aware assistance, modular manipulation/mobility options and bounded task agents with least privilege, audit and human approval. |
+| 2030+ | Enable model/runtime and module upgrades while preserving privacy, predictable interaction, physical safety and compatibility with earlier data/interfaces. |
+
+**Continuous anti-obsolescence rule:** review technology signals monthly, architecture quarterly and the full roadmap annually; trigger an out-of-cycle review when a critical dependency is unsupported, a security issue emerges, or measured performance/resource limits are breached. Keep a verified baseline, migration and rollback path, compatibility/regression tests and a documented decision for every upgrade. Do not adopt a trend solely because it is new. **Status:** Planned roadmap; no future capability is claimed as implemented or validated.
