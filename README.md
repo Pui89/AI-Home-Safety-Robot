@@ -803,3 +803,7 @@ These are development requirements, not claims of implemented, tested or validat
 **Next evidence gate:** complete a narrow software-only home-awareness demonstrator using traceable mock sensor observations, explicit unknown/fault states and repeatable tests. Then assess selected sensors separately under controlled conditions before any physical integration claim.
 
 **Last reviewed:** 22 November 2026. See [offline-first/manual PR #101](https://github.com/Pui89/AI-Home-Safety-Robot/pull/101).
+
+## Global manufacturing engineering
+
+The product-specific [PUI89 Global Manufacturing Design Brief v1.0](docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md) defines the preliminary product envelope, candidate material families, component architecture, global human-factors requirements, extreme-environment design strategy, manufacturing transfer package, quality gates and unresolved specifications. It distinguishes proposed targets from tested or verified performance. Candidate materials and component types are not an approved BOM; exact grades, models, dimensions and tolerances remain open until engineering analysis and validation.
