@@ -815,3 +815,34 @@ For international engineering, factory and worker handoff, use the controlled PU
 - [PUI89 Global Manufacturing Handoff System v1.0](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_GLOBAL_MANUFACTURING_HANDOFF_SYSTEM_V1.0.md)
 
 **Production rule:** Build, buy, substitute, inspect or release only against the exact approved product configuration, revision, drawing, BOM and work instruction. Missing or conflicting values are **STOP — DO NOT GUESS**; raise a Technical Query (TQ). The shared blank manufacturing templates are being reviewed in [PUI89 website PR #639](https://github.com/Pui89/Pui89.github.io/pull/639) and are not yet production authority.
+
+## Future-Ready Technology Policy
+
+This product follows the portfolio-wide [PUI89 Future-Ready Technology Policy v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.md). The policy requires upgradeable interfaces, evidence-based technology selection, provenance/licence review, local-first resource discipline, compatibility testing, safe fallback and controlled release scope. Technology candidates are reviewed monthly and architecture decisions quarterly. This link records policy adoption intent; it does **not** claim that model switching, hardware abstraction, sensor adapters, automated monitoring or product-level validation are already implemented.
+
+## Product-Specific Technology Upgrade Plan
+
+**Gartner 2026 alignment:** Physical AI, bounded Multiagent Systems, Domain-Specific Models and AI Security. See the [canonical portfolio policy](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.md).
+
+| Upgrade area | Planned sequence (not yet a capability claim) |
+|---|---|
+| Vision-language interaction | Define supported commands, uncertainty/abstention and privacy boundaries; benchmark compact models on target compute before selection. |
+| Human-robot interaction | Specify user intent confirmation, accessible feedback, emergency stop and human override; test failure and ambiguous-command cases. |
+| Indoor mapping/navigation | Define mapping/localisation interfaces and safe operating zones; evaluate simulation and controlled indoor tests before claims. |
+| Modular robotics & bounded agents | Separate replaceable perception/planning modules; any assistant agent must have least privilege, audit, human approval and no unrestricted motion authority. |
+
+**First gate:** local privacy design, target-hardware resource budget and safe interaction requirements. **Status:** Planned roadmap only.
+
+
+## Long-Term Technology Evolution & Anti-Obsolescence Strategy (2027–2030+)
+
+This forward-looking roadmap extends the current P1–P4 development sequence beyond the 2026 trend baseline. It identifies evaluation horizons, not guaranteed future capabilities or fixed adoption dates. Each technology remains conditional on verified user value, provenance and licensing, target-hardware fit, safety, maintainability and reproducible evidence.
+
+| Horizon | Product evolution focus |
+|---|---|
+| 2027 | Define privacy-first local data handling, supported-command contracts, human confirmation, emergency stop and replaceable compact-model interfaces. |
+| 2028 | Evaluate vision-language interaction, indoor mapping and human-aware navigation on target hardware; test ambiguous commands and safe degraded behaviour. |
+| 2029 | Explore context-aware assistance, modular manipulation/mobility options and bounded task agents with least privilege, audit and human approval. |
+| 2030+ | Enable model/runtime and module upgrades while preserving privacy, predictable interaction, physical safety and compatibility with earlier data/interfaces. |
+
+**Continuous anti-obsolescence rule:** review technology signals monthly, architecture quarterly and the full roadmap annually; trigger an out-of-cycle review when a critical dependency is unsupported, a security issue emerges, or measured performance/resource limits are breached. Keep a verified baseline, migration and rollback path, compatibility/regression tests and a documented decision for every upgrade. Do not adopt a trend solely because it is new. **Status:** Planned roadmap; no future capability is claimed as implemented or validated.
