@@ -1,5 +1,7 @@
 # PUI89 AI HOME — Indoor Home Assistant Robot
 
+**ภาษาไทย:** [อ่าน README ภาษาไทย](README.th.md)
+
 **A compact four-wheel indoor assistant for household awareness and human-reviewed alerts.**
 
 [English project page](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [PUI89 portfolio](https://pui89.github.io/)
