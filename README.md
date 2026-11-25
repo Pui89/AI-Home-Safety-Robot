@@ -921,3 +921,7 @@ The HOME concept is an indoor four-wheel assistant; its payload target is 8 kg w
 ## 360° Intelligence
 
 The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) defines room-level surround awareness with privacy zones, blind-spot mapping and sensor-health reporting. **Status: Proposed**; no physical robot or validated 360° sensor suite is established.
+
+
+## Hybrid End-to-End Multimodal AI
+[PUI89 Hybrid End-to-End AI Product Adapter v1.0](docs/architecture/PUI89_HYBRID_END_TO_END_AI_ADAPTER_V1.0.md) — proposed product-specific adoption plan. E2E benefits require comparative evidence; product boundaries, independent safety and evidence gates remain mandatory.
