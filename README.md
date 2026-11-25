@@ -23,6 +23,62 @@
 
 ## Product at a glance
 
+
+## Latest Product Capability Baseline — 18 November 2026
+
+**Capability lifecycle:** Perceive → Understand → Predict → Decide → Act. The following is the product-specific target capability map. Shared AI Core provides reusable foundations; each product selects sensors and functions appropriate to its mission.
+
+### Perception and sensory intelligence
+
+- Room and object vision, people/pet awareness, navigation and obstacle perception.
+
+- Environmental monitoring direction: temperature/heat/cold, humidity, light, sound events, vibration, water/leak and air-quality indicators.
+
+- Dedicated, appropriately certified sensor types are required for smoke, carbon monoxide, combustible gas, VOCs or other specific hazards; AI vision or odour inference is not a substitute.
+
+- Structural-change cues such as visible crack progression or unusual vibration are advisory observations only and require calibrated sensors and qualified human review.
+
+### Understanding, prediction and assistance
+
+- Combine room context and sensor observations to identify unusual changes, rank alerts and explain evidence/uncertainty.
+
+- Temporal home-condition trends and predictive maintenance research for supported appliances/systems where data and baselines exist.
+
+- Indoor spatial mapping, task planning and supervised mobile assistance.
+
+- Human-AI interaction for household status, reminders and emergency escalation; no diagnosis or guaranteed emergency response.
+
+### Reliability, privacy and safety
+
+- Sensor freshness/health, unknown-state handling, event history and local-first processing.
+
+- Privacy-by-design: minimise collection, visible/manual privacy controls and no unnecessary cloud transmission.
+
+- Independent certified safety devices remain primary for fire, CO and electrical protection; AI is supplementary.
+
+### ภาษาไทย — ความสามารถและแนวทางพัฒนา
+
+- รับรู้ห้อง สิ่งของ บุคคล สัตว์เลี้ยง การนำทาง และสิ่งกีดขวาง
+
+- แนวทางตรวจวัดอุณหภูมิ ความร้อน ความเย็น ความชื้น แสง เสียง การสั่น น้ำรั่ว และตัวบ่งชี้คุณภาพอากาศ
+
+- ควัน คาร์บอนมอนอกไซด์ ก๊าซไวไฟ และ VOC ต้องใช้เซนเซอร์เฉพาะที่เหมาะสมหรือผ่านการรับรอง ไม่ใช้ภาพหรือการอนุมานกลิ่นแทนอุปกรณ์ตรวจจับ
+
+- ติดตามรอยร้าวหรือการสั่นผิดปกติได้ในฐานะข้อมูลสังเกตการณ์ ต้องมีเซนเซอร์ปรับเทียบและผู้เชี่ยวชาญตรวจสอบ
+
+- รวมข้อมูลเพื่อค้นหาความเปลี่ยนแปลง จัดลำดับการแจ้งเตือน และแสดงหลักฐานกับความไม่แน่นอน
+
+- วิเคราะห์แนวโน้มตามเวลาและศึกษาการบำรุงรักษาเชิงคาดการณ์เมื่อมีข้อมูลและค่าพื้นฐานที่เหมาะสม
+
+- ทำแผนที่ภายในบ้าน วางแผนงาน และช่วยเคลื่อนที่ภายใต้การกำกับ
+
+- สนับสนุนการโต้ตอบ แจ้งสถานะ เตือนความจำ และประสานการขอความช่วยเหลือ โดยไม่วินิจฉัยหรือรับประกันผล
+
+- ตรวจสุขภาพและความใหม่ของข้อมูล ใช้แนวทาง local-first และออกแบบความเป็นส่วนตัวตั้งแต่ต้น
+
+**Evidence boundary / ขอบเขตหลักฐาน:** These are proposed product capabilities; no complete sensor suite, home hazard detection performance, structural diagnosis or emergency-response guarantee is claimed. Certified smoke/CO/electrical protection remains independent and primary. / เป็นความสามารถที่เสนอ ยังไม่มีการยืนยันชุดเซนเซอร์ครบถ้วน สมรรถนะตรวจจับภัยในบ้าน การวินิจฉัยโครงสร้าง หรือการรับประกันการช่วยเหลือฉุกเฉิน
+
+
 **Product direction:** A compact four-wheel indoor assistant for home awareness and everyday support.
 
 **User value:** Help residents notice changes in home conditions and receive understandable, evidence-based prompts for human attention.
