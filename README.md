@@ -917,3 +917,7 @@ A reproducible evaluation framework for context-grounded indoor assistance and a
 ### 8. Safety, privacy and publication gates
 
 The HOME concept is an indoor four-wheel assistant; its payload target is 8 kg with a 10 kg maximum design limit, not a validated carrying rating. Do not claim safe physical operation without hazard analysis and tests. Use privacy-preserving data collection, informed consent and retention controls. Report simulation and physical results separately. Q1 suitability depends on verified novelty, ethical approval and reproducible evidence.
+
+## 360° Intelligence
+
+The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) defines room-level surround awareness with privacy zones, blind-spot mapping and sensor-health reporting. **Status: Proposed**; no physical robot or validated 360° sensor suite is established.
