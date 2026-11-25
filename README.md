@@ -846,3 +846,74 @@ This forward-looking roadmap extends the current P1–P4 development sequence be
 | 2030+ | Enable model/runtime and module upgrades while preserving privacy, predictable interaction, physical safety and compatibility with earlier data/interfaces. |
 
 **Continuous anti-obsolescence rule:** review technology signals monthly, architecture quarterly and the full roadmap annually; trigger an out-of-cycle review when a critical dependency is unsupported, a security issue emerges, or measured performance/resource limits are breached. Keep a verified baseline, migration and rollback path, compatibility/regression tests and a documented decision for every upgrade. Do not adopt a trend solely because it is new. **Status:** Planned roadmap; no future capability is claimed as implemented or validated.
+
+
+---
+
+## Academic Research Direction — Q1-Targeted Study (Proposed)
+
+**Research topic:** Context-Aware Multimodal AI for Indoor Assistance  
+**Working manuscript title:** *Context-Grounded Multimodal Perception and Human-Aware Navigation for Reliable Indoor Mobile Assistance*
+
+**Status:** Proposed academic study. Novelty, data access, ethics and physical feasibility require lecturer review. No home-assistance capability or safety performance is claimed as validated.
+
+### 1. Problem and motivation
+
+An indoor mobile assistant must interpret a user's request in the context of rooms, objects, people and changing household conditions. A visually plausible interpretation may still be wrong when an instruction is ambiguous, an object is occluded or a person moves unexpectedly. Navigation success alone does not establish that the robot behaved appropriately around people.
+
+### 2. Research gap to verify
+
+- Limited grounding of language-based intent in current visual/spatial evidence.
+- Inadequate treatment of ambiguity, missing observations and changes to familiar indoor layouts.
+- Trade-offs between task completion, collision/near-miss risk, human comfort and compute cost.
+- Need to distinguish simulated navigation performance from physical household validation.
+
+### 3. Research questions and hypotheses
+
+- **RQ1:** Does context-grounded multimodal perception improve instruction and scene understanding over vision-only or language-only baselines?
+- **RQ2:** Does uncertainty-aware planning improve safe task completion in dynamic indoor environments?
+- **RQ3:** How do clarification and human-confirmation policies affect task success and intervention burden?
+- **H1:** Combining visual/spatial context with language interpretation will improve task-grounding accuracy over single-source baselines.
+- **H2:** A planner that pauses or requests clarification under uncertainty will reduce unsafe interactions, with a measurable trade-off in task time.
+
+### 4. Proposed hybrid-AI method and workflow
+
+1. Build a structured indoor scene representation from RGB-D observations and mapping.
+2. Use specialist models for object/person detection, semantic segmentation and tracking.
+3. Use a VLM or compact language model to interpret user instructions against observed objects and room context.
+4. Convert interpretation into a bounded task proposal with explicit preconditions and confidence.
+5. Use conventional localisation, path planning and collision checking for movement.
+6. Apply human-aware constraints, uncertainty thresholds and clarification/confirmation rules.
+7. Log observations, map version, task proposal, intervention, near-miss and failure evidence.
+
+The AI must not infer medical conditions or make emergency/clinical decisions. Any physical movement remains subject to product-specific hardware safety and human override.
+
+### 5. Candidate datasets and data collection
+
+- **Habitat 3.0 / Habitat** and **Gibson** may support simulation and navigation studies.
+- **Matterport3D** may support indoor scene understanding, subject to access and licence conditions.
+- **THUD++** or other appropriately licensed RGB-D human-scene datasets may support dynamic human-context experiments.
+- **Original controlled trials** should cover rooms, corridors, doorways, furniture layouts, lighting, moving people and ambiguous instructions. Obtain informed consent, minimise capture of identifiable household information and separate simulation from physical trial results.
+
+Dataset suitability and licences must be confirmed before use; public benchmark data do not establish real-home performance.
+
+### 6. Experimental design
+
+- **Baselines:** conventional geometric navigation; vision-only scene model; language-only instruction parser; fixed-threshold planner; proposed context-grounded and uncertainty-aware pipeline.
+- **E1:** language grounding with and without visual/spatial context.
+- **E2:** static versus dynamic people and obstacles.
+- **E3:** familiar versus changed layouts, moved furniture and partial occlusion.
+- **E4:** ambiguous instructions, missing objects and conflicting observations; measure clarification and abstention.
+- **E5:** simulation-to-physical transfer only if a physical platform and approved trial environment exist.
+- **E6:** latency, peak RAM, model size and energy on declared target hardware.
+
+**Primary outcomes:** task success and intervention rate under a predeclared scenario protocol.  
+**Secondary outcomes:** collision/contact and near-miss counts, minimum clearance, path efficiency, time-to-goal, localisation error, recovery rate, instruction-grounding accuracy, clarification rate and compute cost.
+
+### 7. Expected scientific contribution
+
+A reproducible evaluation framework for context-grounded indoor assistance and a hybrid perception/planning method that connects language intent to observed spatial evidence, while explicitly handling uncertainty and human confirmation.
+
+### 8. Safety, privacy and publication gates
+
+The HOME concept is an indoor four-wheel assistant; its payload target is 8 kg with a 10 kg maximum design limit, not a validated carrying rating. Do not claim safe physical operation without hazard analysis and tests. Use privacy-preserving data collection, informed consent and retention controls. Report simulation and physical results separately. Q1 suitability depends on verified novelty, ethical approval and reproducible evidence.
