@@ -231,3 +231,10 @@ Console สำหรับใช้งานภายในบ้านที่
 AI HOME ออกแบบสำหรับใช้ภายในบ้าน ไม่ใช่หุ่นยนต์สำหรับป่าหรือพื้นที่ทุรกันดาร ให้ความสำคัญกับการนำทางในห้องที่คาดการณ์ได้ ความเป็นส่วนตัว การตอบสนองต่อสิ่งกีดขวาง และการกลับแท่นชาร์จ การทำงาน Offline จำกัดเฉพาะฟังก์ชันที่พัฒนาไว้และพลังงานแบตเตอรี่ที่มี
 
 เมื่อข้อมูลขาดหาย เก่า ขัดแย้ง หรือไม่น่าเชื่อถือ ให้แสดงเหตุผลและงดการกระทำที่ได้รับผลกระทบ ใช้เฉพาะข้อมูลและความสามารถภายในเครื่องที่ตรวจสอบแล้ว หากความปลอดภัย ความมั่นใจของเส้นทาง หรือพลังงานสำรองไม่เพียงพอ ให้เข้าสู่ SAFE STOP / NEED HELP แทนการคาดเดา คำว่า “Offline capable” ไม่ได้หมายถึงรับประกันการทำงานได้ในทุกพื้นที่ห่างไกล ป่า ใต้ดิน หรือพื้นที่ภาคสนามลึก
+
+
+## Self-Recovery and Camera-Assisted Awareness
+
+**Proposed requirements — not implemented, camera hardware not selected, not field-validated.** A restart returns to a safe software state and repeats self-checks; it never automatically resumes motion or erases fault history. Detect stalls, impact/fall, abnormal power, sensor faults or software failures; stop safely, log the event, run bounded diagnostics and resume only after the fault is cleared. Suspected electrical short, overheating or physical damage requires hardware isolation and human inspection; do not repeatedly power-cycle. Camera inputs are local-first and are not the sole safety sensor.
+
+กล้องภายในบ้านเป็นอุปกรณ์เสริมเพื่อช่วยรับรู้ห้อง/บริบท ต้องแสดงสถานะกล้องทำงานและมีตัวควบคุมความเป็นส่วนตัวทางกายภาพ โดยคุ้มครองความเป็นส่วนตัวเป็นค่าเริ่มต้น เมื่อชนหรือติดขัดให้หยุดล้อ ตรวจเซนเซอร์และกล้อง รวมถึงเส้นทาง ห้ามฝืนดันสิ่งกีดขวางหรือพลิกตัวโดยไม่มีการทดสอบ
