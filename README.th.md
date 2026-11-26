@@ -195,3 +195,8 @@ AI HOME เป็นแนวคิดผู้ช่วยเคลื่อน
 ## 360° Intelligence
 
 กำหนดการรับรู้สภาพแวดล้อมภายในบ้านแบบหลายมุม โดยคำนึงถึงห้อง พื้นที่ส่วนตัว จุดบอด และการอนุญาตใช้ข้อมูล ดู [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) และ [สถาปัตยกรรมกลาง](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/PUI89_360_DEGREE_INTELLIGENCE_V1.0.md) **สถานะ: Proposed** ยังไม่มีหุ่นยนต์หรือชุดเซนเซอร์ 360° ที่ติดตั้งและตรวจสอบแล้ว
+
+
+## การตรวจสอบคุณสมบัติด้านสภาพแวดล้อม วัสดุ และความปลอดภัย
+
+ผลิตภัณฑ์นี้ใช้ [กรอบ PUI89 Six-Product Environmental, Material & Safety Qualification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.th.md) ข้อกำหนดเฉพาะ AI HOME ครอบคลุมฝุ่น/น้ำหกภายในบ้าน พื้นผิวกลิ่นต่ำและทำความสะอาดง่าย แผงขอบมนที่ลดแรงกระแทก กันชน วัสดุแยกเสียง/แรงสั่นสะเทือน ความปลอดภัยแบตเตอรี่/อัคคีภัย และความเข้ากันได้กับน้ำยาทำความสะอาด เป้าหมาย IP ใช้เฉพาะกล่องที่เกี่ยวข้อง ข้อกำหนดทั้งหมดเป็นข้อเสนอ ยังไม่มีการกล่าวอ้างว่าผลิตภัณฑ์ผ่านการป้องกันน้ำ/ฝุ่นหรือไฟ
