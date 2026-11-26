@@ -207,3 +207,18 @@ AI HOME เป็นแนวคิดผู้ช่วยเคลื่อน
 **สถานะ: Proposed / Not implemented / Not tested.** การตรวจจับแบบสดต้องใช้เซนเซอร์จริงร่วมกับ Embedded Acquisition และ Software/AI ไม่ใช่ AI อย่างเดียว Hardware ที่ควรศึกษา: IMU/Accelerometer บนแชสซี และเซนเซอร์มอเตอร์ล้อเพิ่มเติมหลังทบทวนแบบ วิเคราะห์การสึก/ไม่สมดุลของล้อ ระบบขับเคลื่อน การชนและการเคลื่อนที่ผิดปกติ โดยแยกพื้นผิวพื้นบ้าน
 
 Console ต้องแยก **Hardware** (มีเซนเซอร์ ชนิด/ตำแหน่ง/การเชื่อมต่อ/Calibration), **Embedded & Signal Processing** (Acquisition, RMS/Peak/FFT และคุณภาพข้อมูล), **AI/Analytics** (โมเดลตรวจจับ/แนวโน้มและ Confidence), **Integration** (จับคู่โมดูลและ Workflow ซ่อม) และ **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available) แสดง Not installed, No live data, Not tested และ TBD อย่างชัดเจน ห้ามสร้างค่าการสั่นสดหรือแสดง Healthy เมื่อไม่มีข้อมูล การเลือกเซนเซอร์ จุดยึด Calibration Baseline Threshold False Alarm และ Detection Latency ต้องมีหลักฐาน AI เป็นคำแนะนำ ระบบความปลอดภัยอิสระมีอำนาจหยุด ดู [กรอบ Vibration และ Console ทั้ง 6 ผลิตภัณฑ์](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.th.md)
+
+
+## Local Product Console — แนวคิด Console ภายในผลิตภัณฑ์ (ข้อเสนอ)
+
+**สถานะ: Proposed / Not implemented / Not tested** ยังไม่มีหลักฐานว่ามี Console ของ AI HOME จริง มีการเลือกจอ หรือเชื่อมต่อ Console กับอุปกรณ์แบบ Live แล้ว
+
+Console สำหรับใช้งานภายในบ้านที่เสนอจะให้ข้อมูลสถานะบ้าน/ห้อง ความพร้อมของระบบติดตาม สถานะการเคลื่อนที่และการกลับแท่น/ชาร์จ การแจ้งเตือน สถานะความเป็นส่วนตัว การวินิจฉัย และการปิดระบบอย่างเป็นลำดับ หน้าจอและปุ่มต้องออกแบบให้เหมาะกับการใช้งานในบ้านและสมาชิกครัวเรือน ไม่ใช่นำ UI ของผลิตภัณฑ์อื่นมาใช้ตรง ๆ
+
+- ฟังก์ชันพื้นฐานภายในเครื่องต้องทำงานได้โดยไม่ต้องใช้แอปโทรศัพท์ รีโมต บัญชี Cloud หรืออินเทอร์เน็ต
+- แสดงสถานะการใช้กล้อง/ไมโครโฟนและโหมดความเป็นส่วนตัวให้เห็นชัด พร้อมคงปุ่มควบคุมความเป็นส่วนตัวทางกายภาพตามข้อกำหนด
+- แยกค่าที่เซนเซอร์วัดได้ออกจากผลอนุมานของ AI ผลที่ไม่แน่นอน และข้อมูลที่ขาด/เก่า
+- คำสั่ง Shutdown บน Console ไม่ใช้แทนการแยกพลังงานมอเตอร์ ปุ่มหยุดทางกายภาพ หรือระบบความปลอดภัยฮาร์ดแวร์ ต้องกำหนดการตอบสนองต่อสิ่งกีดขวาง การหยุดเคลื่อนที่ และการกู้คืนด้วยมือก่อนใช้งานจริง
+- ใช้วงจร POWER OFF → POWER ON/SELF-CHECK → NOT READY/READY → OPERATING → STOPPING → SHUTDOWN พร้อมการจัดการ FAULT/RECOVERY
+
+ดู [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/210) ข้อกำหนด Console ยังเป็นข้อเสนอ ไม่ได้กล่าวอ้างว่ามีหน้าจอหรือหุ่นยนต์ที่ทำงานได้จริง
