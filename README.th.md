@@ -207,3 +207,10 @@ AI HOME เป็นแนวคิดผู้ช่วยเคลื่อน
 **สถานะ: Proposed / Not implemented / Not tested.** การตรวจจับแบบสดต้องใช้เซนเซอร์จริงร่วมกับ Embedded Acquisition และ Software/AI ไม่ใช่ AI อย่างเดียว Hardware ที่ควรศึกษา: IMU/Accelerometer บนแชสซี และเซนเซอร์มอเตอร์ล้อเพิ่มเติมหลังทบทวนแบบ วิเคราะห์การสึก/ไม่สมดุลของล้อ ระบบขับเคลื่อน การชนและการเคลื่อนที่ผิดปกติ โดยแยกพื้นผิวพื้นบ้าน
 
 Console ต้องแยก **Hardware** (มีเซนเซอร์ ชนิด/ตำแหน่ง/การเชื่อมต่อ/Calibration), **Embedded & Signal Processing** (Acquisition, RMS/Peak/FFT และคุณภาพข้อมูล), **AI/Analytics** (โมเดลตรวจจับ/แนวโน้มและ Confidence), **Integration** (จับคู่โมดูลและ Workflow ซ่อม) และ **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available) แสดง Not installed, No live data, Not tested และ TBD อย่างชัดเจน ห้ามสร้างค่าการสั่นสดหรือแสดง Healthy เมื่อไม่มีข้อมูล การเลือกเซนเซอร์ จุดยึด Calibration Baseline Threshold False Alarm และ Detection Latency ต้องมีหลักฐาน AI เป็นคำแนะนำ ระบบความปลอดภัยอิสระมีอำนาจหยุด ดู [กรอบ Vibration และ Console ทั้ง 6 ผลิตภัณฑ์](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.th.md)
+
+
+## ข้อกำหนดความต้องการผลิตภัณฑ์ v1.0
+
+[ข้อกำหนดความต้องการผลิตภัณฑ์ PUI89 AI HOME v1.0](docs/engineering/PUI89_AI_HOME_PRODUCT_REQUIREMENTS_SPECIFICATION_V1.0.th.md) กำหนดผู้ใช้ ขอบเขตการทำงาน เป้าหมายขนาด 25–28 × 30–33 × 30–35 ซม. เป้าหมายน้ำหนักรวม 8 กก. และสูงสุด 10 กก. สถาปัตยกรรมทางกายภาพ การแบ่งหน้าที่ Hardware กับ Embedded/AI ความเป็นส่วนตัว ความปลอดภัยในการเคลื่อนที่ ข้อกำหนด Console และประตูตรวจสอบ G0–G8 ตัวเลขเป็นเป้าหมายการออกแบบ ไม่ใช่หลักฐานว่ามีหุ่นยนต์จริงหรือผ่านการทดสอบ รุ่นชิ้นส่วน Payload ระยะเวลาทำงาน ความเร็ว ระยะหยุด ระดับการป้องกันฝุ่น/น้ำ และต้นทุนยังเป็น TBD จนกว่าจะมีหลักฐาน
+
+[English: PUI89 AI HOME Product Requirements Specification v1.0](docs/engineering/PUI89_AI_HOME_PRODUCT_REQUIREMENTS_SPECIFICATION_V1.0.md)
