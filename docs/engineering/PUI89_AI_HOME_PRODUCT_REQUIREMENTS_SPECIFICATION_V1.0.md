@@ -199,3 +199,10 @@ Before purchasing hardware:
 10. Independent design review of the 8 kg target and 10 kg maximum.
 
 **Current evidence statement:** This document defines proposed requirements and engineering work. No physical AI HOME robot, selected hardware stack, live sensor integration, measured performance, prototype test, home deployment, validation or certification is claimed.
+
+
+## Self-Recovery and Camera Subsystem Requirements
+
+**Proposed only; no camera module or self-recovery mechanism is selected, built or validated.** Recovery must return the product to a known safe state, retain diagnostic history and repeat self-checks. It must not automatically resume movement or hazardous tasks. Detect stalls, falls/impact, abnormal current/voltage, overheating, sensor faults and software watchdog events; stop affected motion, isolate electrical faults through qualified hardware protection, log evidence and perform only bounded approved recovery. Short circuits, thermal events, structural damage and unknown post-impact condition require human inspection. Self-righting is allowed only for products mechanically designed and validated for it.
+
+Camera support is product-specific and local-first. Define purpose, field of view, low-light performance, resolution/frame rate, interface, power, mounting, privacy, environmental protection, model and origin before selection. Camera is not a sole safety sensor and cannot verify hidden internal damage. Use camera with IMU/tilt, power/current/temperature sensing and actuator feedback where appropriate. Product-specific camera roles: Coconut image capture and operator review; Sentinel terrain/obstacle and post-event scene awareness; HOME privacy-controlled indoor context; NOMAD optional local forward view; SUV approved existing vehicle cameras only; Scooter optional only when it does not distract the rider.
