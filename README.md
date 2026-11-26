@@ -931,3 +931,15 @@ The HOME concept is an indoor four-wheel assistant; its payload target is 8 kg w
 ## 360° Intelligence
 
 The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) defines room-level surround awareness with privacy zones, blind-spot mapping and sensor-health reporting. **Status: Proposed**; no physical robot or validated 360° sensor suite is established.
+
+
+## Environmental, Material & Safety Qualification
+
+This product follows the [PUI89 Six-Product Environmental, Material & Safety Qualification Framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md). AI HOME-specific candidate requirements cover indoor dust/spill zones, cleanable low-odour surfaces, rounded impact-safe panels, compliant bumpers, low-noise isolation, battery/fire safety and cleaning-agent compatibility. Any IP target applies only to the relevant enclosure. All requirements remain proposed; no product-level ingress or fire qualification is claimed.
+
+
+## Vibration Detection & Console Classification
+
+**Status: Proposed / Not implemented / Not tested.** Live vibration monitoring requires physical sensing hardware plus embedded acquisition and software/AI analysis; it is not AI-only. Candidate hardware: chassis-mounted IMU/accelerometer, with optional wheel-motor sensing after design review. Candidate analysis: wheel wear/imbalance, drivetrain vibration, collisions and abnormal movement, distinguishing floor texture.
+
+The console must separate **Hardware** (sensor presence/type/location/connection/calibration), **Embedded & Signal Processing** (acquisition, RMS/peak/FFT and data quality), **AI/Analytics** (anomaly/trend model and confidence), **Integration** (module mapping and maintenance workflow), and **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available). Show Not installed, No live data, Not tested and TBD explicitly. Do not invent live metrics or show healthy status without sensor data. Sensor selection, mounting, calibration, baseline, thresholds, false alarms and detection latency require evidence. AI diagnosis is advisory; independent safety controls retain stop authority. See the [shared vibration and console framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md).
