@@ -931,3 +931,8 @@ The HOME concept is an indoor four-wheel assistant; its payload target is 8 kg w
 ## 360° Intelligence
 
 The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) defines room-level surround awareness with privacy zones, blind-spot mapping and sensor-health reporting. **Status: Proposed**; no physical robot or validated 360° sensor suite is established.
+
+
+## Environmental, Material & Safety Qualification
+
+This product follows the [PUI89 Six-Product Environmental, Material & Safety Qualification Framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md). AI HOME-specific candidate requirements cover indoor dust/spill zones, cleanable low-odour surfaces, rounded impact-safe panels, compliant bumpers, low-noise isolation, battery/fire safety and cleaning-agent compatibility. Any IP target applies only to the relevant enclosure. All requirements remain proposed; no product-level ingress or fire qualification is claimed.
