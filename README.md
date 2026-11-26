@@ -943,3 +943,27 @@ This product follows the [PUI89 Six-Product Environmental, Material & Safety Qua
 **Status: Proposed / Not implemented / Not tested.** Live vibration monitoring requires physical sensing hardware plus embedded acquisition and software/AI analysis; it is not AI-only. Candidate hardware: chassis-mounted IMU/accelerometer, with optional wheel-motor sensing after design review. Candidate analysis: wheel wear/imbalance, drivetrain vibration, collisions and abnormal movement, distinguishing floor texture.
 
 The console must separate **Hardware** (sensor presence/type/location/connection/calibration), **Embedded & Signal Processing** (acquisition, RMS/peak/FFT and data quality), **AI/Analytics** (anomaly/trend model and confidence), **Integration** (module mapping and maintenance workflow), and **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available). Show Not installed, No live data, Not tested and TBD explicitly. Do not invent live metrics or show healthy status without sensor data. Sensor selection, mounting, calibration, baseline, thresholds, false alarms and detection latency require evidence. AI diagnosis is advisory; independent safety controls retain stop authority. See the [shared vibration and console framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md).
+
+
+## Local Product Console — Proposed
+
+**Status: Proposed / Not implemented / Not tested.** No physical AI HOME console, selected display hardware or live device-console integration is established.
+
+The intended indoor console provides local home/room status, monitoring availability, movement and docking/charging state, alerts, privacy state, diagnostics and orderly shutdown. Its interface and controls must be designed for indoor use and household members, not copied from another product.
+
+- Essential local functions must work without a phone app, remote access, cloud account or internet.
+- Make camera/microphone activity and privacy mode visible; preserve manual physical privacy controls where specified.
+- Distinguish measured sensor state from AI inference, uncertain results and unavailable/stale data.
+- A console shutdown action does not replace independent motor power isolation, physical stop controls or hardware safety behavior. Define obstacle response, movement stop and manual recovery before deployment.
+- Use POWER OFF → POWER ON/SELF-CHECK → NOT READY/READY → OPERATING → STOPPING → SHUTDOWN, with FAULT/RECOVERY handling.
+
+See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/210). The console remains a proposed requirement; no working screen or robot is claimed.
+
+
+## Simple Local Intelligence for Offline and Uncertain Conditions
+
+**Design requirement — not implemented or field-validated.** Keep essential functions on-device; no mandatory cloud, internet, phone app or remote control. Use energy conservatively: warn at a validated low-power threshold, shed nonessential workloads first, and preserve energy for a safe stop. Do not assume self-charging or unlimited runtime.
+
+AI HOME is designed for indoor use, not wilderness deployment. Prioritize predictable room navigation, privacy, obstacle response and safe docking. Offline operation is limited to implemented onboard functions and available battery.
+
+When inputs are missing, stale, conflicting or unreliable, show the reason and abstain from the affected action. Use only verified local data and capabilities. If safety, route confidence or energy reserve is insufficient, enter SAFE STOP / NEED HELP rather than guessing. “Offline capable” does not mean guaranteed operation in every remote, wild, underground or deep-field environment.
