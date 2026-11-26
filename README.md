@@ -967,3 +967,10 @@ See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://g
 AI HOME is designed for indoor use, not wilderness deployment. Prioritize predictable room navigation, privacy, obstacle response and safe docking. Offline operation is limited to implemented onboard functions and available battery.
 
 When inputs are missing, stale, conflicting or unreliable, show the reason and abstain from the affected action. Use only verified local data and capabilities. If safety, route confidence or energy reserve is insufficient, enter SAFE STOP / NEED HELP rather than guessing. “Offline capable” does not mean guaranteed operation in every remote, wild, underground or deep-field environment.
+
+
+## Self-Recovery and Camera-Assisted Awareness
+
+**Proposed requirements — not implemented, camera hardware not selected, not field-validated.** A restart returns to a safe software state and repeats self-checks; it never automatically resumes motion or erases fault history. Detect stalls, impact/fall, abnormal power, sensor faults or software failures; stop safely, log the event, run bounded diagnostics and resume only after the fault is cleared. Suspected electrical short, overheating or physical damage requires hardware isolation and human inspection; do not repeatedly power-cycle. Camera inputs are local-first and are not the sole safety sensor.
+
+An optional indoor camera may support room/context awareness. Provide visible camera-active status and a physical privacy control; default to privacy protection. After a bump or stall, stop wheels, check sensor and camera availability and clear path; do not push through obstacles or attempt unvalidated self-righting.
