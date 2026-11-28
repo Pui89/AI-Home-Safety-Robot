@@ -724,7 +724,7 @@ AI HOME แต่ละตัวทำหน้าที่รับข้อม
 ### 1. Physical capacity
 - Four-wheel, low-profile indoor platform.
 - Width: **25–28 cm target**; depth: **30–33 cm target**; height: **30–35 cm target**.
-- Complete robot mass: **8 kg target; 10 kg maximum design ceiling**, including battery and installed hardware.
+- Complete robot mass: **4–6 kg target; 10 kg maximum design ceiling**, including battery and installed hardware.
 - Payload: **TBD**. Existing engineering notes identify a 1 kg initial evaluation and 2 kg stretch target for analysis/testing; neither is a validated payload rating.
 - Define centre of gravity, tip resistance, wheel loading, enclosure strength and safe contact limits before design freeze.
 
