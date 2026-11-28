@@ -227,7 +227,7 @@ Indoor four-wheel home assistant; 4–6 kg target design mass and 10 kg maximum 
 | Battery/BMS/protection | 1 set | Protected power |
 | Compute/controller | 1 set | Reuse shared compute where suitable |
 
-**Special engineering / purchase gate:** Keep the design indoors and owner-supervised. Verify total mass, wheel guarding, pinch points, emergency stop, battery protection, obstacle sensing and safe docking before any mobile prototype test. The 8 kg and 10 kg figures are design targets, not measured results.
+**Special engineering / purchase gate:** Keep the design indoors and owner-supervised. Verify total mass, wheel guarding, pinch points, emergency stop, battery protection, obstacle sensing and safe docking before any mobile prototype test. The 4–6 kg target and 10 kg maximum are design targets, not measured results.
 
 **Shared engineering bench (tracked separately):** approximately ฿16,500–46,000 if the existing development computer is reused. This is a portfolio-level allowance for reusable compute, one RGB-D camera, bench power supply/multimeter, two microcontroller boards and reusable tools/wiring/adapters; it is not added to each project total. Allocate each shared item once, not once per product.
 
