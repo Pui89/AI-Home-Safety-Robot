@@ -21,7 +21,7 @@
 
 **AI technology direction:** computer vision and selected object/motion detection; anomaly detection against configured context; optional sound-event classification; edge AI; IoT sensor integration; event fusion, timestamped history, privacy permissions and phone notifications. Sensor types must be selected for the hazard and installed/calibrated appropriately.
 
-**Physical design target:** four-wheel indoor robot; 25–28 cm wide, 30–33 cm deep, 30–35 cm high; 8 kg target complete mass and 10 kg maximum design ceiling. These remain design targets; payload and detailed mechanical performance require validation.
+**Physical design target:** four-wheel indoor robot; 25–28 cm wide, 30–33 cm deep, 30–35 cm high; 4–6 kg target complete mass and 10 kg maximum design ceiling. These remain design targets; payload and detailed mechanical performance require validation.
 
 **Safety boundary:** AI HOME is an additional awareness layer, not a replacement for certified smoke, fire, carbon-monoxide, gas, electrical or water-protection devices. No physical robot, live sensor integration, alert-delivery reliability or validated home-safety performance is claimed. Consequential alerts require human verification and privacy-aware configuration.
 
@@ -93,7 +93,7 @@ The revised compact form factor is a **proposed design target**, subject to CAD,
 | Width (W) | **25–28 cm** |
 | Length / depth (D) | **30–33 cm** |
 | Height (H) | **30–35 cm** |
-| Complete robot mass | **8 kg target**, including battery and all installed hardware |
+| Complete robot mass | **4–6 kg target**, including battery and all installed hardware |
 | Maximum complete robot mass | **10 kg design ceiling**, including battery and all installed hardware |
 | Payload | **TBD**; define after structural, traction, braking and stability calculations |
 | Mobility | Four wheels; indoor use |
@@ -106,7 +106,7 @@ The external dimensions include the wheels, fixed sensor housing and all permane
 
 **Engineering checks before design freeze:** verify the complete external envelope in CAD; weigh every selected component and the assembled robot; calculate centre of gravity and tip resistance; validate the 1 kg initial payload and separately assess the 2 kg stretch target, wheel loading, floor transitions, stopping distance, battery containment/charging, thermal behaviour, ventilation, acoustic performance and maintenance access.
 
-**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** The 8 kg target and 10 kg maximum are design targets, not measured results from a physical prototype. Payload capacity remains TBD and must be established through engineering analysis and testing. No stair climbing, outdoor terrain capability, waterproofing, fire resistance, IP rating or certified safety performance is claimed.
+**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** The 4–6 kg target and 10 kg maximum are design targets, not measured results from a physical prototype. Payload capacity remains TBD and must be established through engineering analysis and testing. No stair climbing, outdoor terrain capability, waterproofing, fire resistance, IP rating or certified safety performance is claimed.
 
 
 ## What it is designed to monitor
@@ -192,7 +192,7 @@ The following documents define the proposed engineering baseline. They are requi
 - [Verification and validation plan](docs/VERIFICATION_AND_VALIDATION_PLAN.md) — software, simulation, bench and supervised test stages.
 - [Hardware specification](docs/HARDWARE_SPECIFICATION.md) — component selection criteria and TBD engineering values; research only, no purchasing.
 - [Power, battery and Five-Sense engineering baseline](docs/AI_HOME_POWER_AND_FIVE_SENSE_ENGINEERING_BASELINE.md) — proposed power states, battery sizing method, chip-level inventory, six sensor groups, privacy boundaries and verification gates; no parts selected or validated.
-- [Preliminary internal layout and historical mass plan (superseded by the current 8 kg target / 10 kg maximum)](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.\n- [Indoor Perception MVP](docs/INDOOR_PERCEPTION_MVP.md) — initial deterministic CPU-first decision layer, conservative safe-hold logic and repeatable unit tests; no vision model or hardware integration is claimed.
+- [Preliminary internal layout and historical mass plan (superseded by the current 4–6 kg target / 10 kg maximum)](docs/AI_HOME_INTERNAL_LAYOUT_AND_MASS_BUDGET.md) — packaging zones, category-level BOM and engineering gates; planning allocations only, not measured weights or selected parts.\n- [Indoor Perception MVP](docs/INDOOR_PERCEPTION_MVP.md) — initial deterministic CPU-first decision layer, conservative safe-hold logic and repeatable unit tests; no vision model or hardware integration is claimed.
 
 ### Software-only MVP demonstrator
 
@@ -215,7 +215,7 @@ PUI89 uses a traceable sourcing workflow for materials, mechanical parts, sensor
 
 **Planning allowance for one research prototype: ฿29,000–90,500.** This is a preliminary estimate from the [PUI89 project-specific BOM](https://pui89.github.io/materials.html#project-boms), not a supplier quotation or verified current market price.
 
-Indoor four-wheel home assistant; 8 kg target design mass and 10 kg maximum design mass.
+Indoor four-wheel home assistant; 4–6 kg target design mass and 10 kg maximum design mass.
 
 | Main item | Prototype quantity | Purpose |
 |---|---:|---|
@@ -227,7 +227,7 @@ Indoor four-wheel home assistant; 8 kg target design mass and 10 kg maximum desi
 | Battery/BMS/protection | 1 set | Protected power |
 | Compute/controller | 1 set | Reuse shared compute where suitable |
 
-**Special engineering / purchase gate:** Keep the design indoors and owner-supervised. Verify total mass, wheel guarding, pinch points, emergency stop, battery protection, obstacle sensing and safe docking before any mobile prototype test. The 8 kg and 10 kg figures are design targets, not measured results.
+**Special engineering / purchase gate:** Keep the design indoors and owner-supervised. Verify total mass, wheel guarding, pinch points, emergency stop, battery protection, obstacle sensing and safe docking before any mobile prototype test. The 4–6 kg target and 10 kg maximum are design targets, not measured results.
 
 **Shared engineering bench (tracked separately):** approximately ฿16,500–46,000 if the existing development computer is reused. This is a portfolio-level allowance for reusable compute, one RGB-D camera, bench power supply/multimeter, two microcontroller boards and reusable tools/wiring/adapters; it is not added to each project total. Allocate each shared item once, not once per product.
 
@@ -380,7 +380,7 @@ This project adopts PUI89 Engineering Intelligence to connect indoor perception,
 **Product-specific design priorities**
 - **Indoor mobility:** study footprint, turning radius, wheelbase, threshold crossing, floor transitions, carpet interaction, slope limits and low-speed stability.
 - **Human-safe structure:** rounded external geometry, pinch/entrapment avoidance, compliant contact surfaces, guarded moving parts and accessible emergency stop.
-- **Payload and manipulation:** target an 8 kg complete robot mass and keep the design within the 10 kg maximum, including battery and installed hardware; assess payload, centre of mass, tip-over margin, braking distance, retention and safe handling separately.
+- **Payload and manipulation:** target a 4–6 kg complete robot mass and keep the design within the 10 kg maximum, including battery and installed hardware; assess payload, centre of mass, tip-over margin, braking distance, retention and safe handling separately.
 - **Home-environment awareness:** detect people, pets, furniture, stairs, cables, spills and temporary obstacles with uncertainty-aware stop/slow/ask behaviour.
 - **Power and thermal design:** assess battery protection, charging safety, runtime estimation, thermal monitoring, serviceability and graceful low-power shutdown.
 - **Privacy by design:** local-first processing where feasible, clear camera/microphone states, data minimisation and user-controlled retention.
@@ -724,7 +724,7 @@ AI HOME แต่ละตัวทำหน้าที่รับข้อม
 ### 1. Physical capacity
 - Four-wheel, low-profile indoor platform.
 - Width: **25–28 cm target**; depth: **30–33 cm target**; height: **30–35 cm target**.
-- Complete robot mass: **8 kg target; 10 kg maximum design ceiling**, including battery and installed hardware.
+- Complete robot mass: **4–6 kg target; 10 kg maximum design ceiling**, including battery and installed hardware.
 - Payload: **TBD**. Existing engineering notes identify a 1 kg initial evaluation and 2 kg stretch target for analysis/testing; neither is a validated payload rating.
 - Define centre of gravity, tip resistance, wheel loading, enclosure strength and safe contact limits before design freeze.
 
@@ -785,7 +785,7 @@ PUI89 adopts the [Physical & Multimodal Sensor Privacy Standard v1.0](https://gi
 
 ## Long-Life Battery & Energy Intelligence
 
-PUI89 adopts the [Long-Life Battery & Energy Intelligence Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/energy/PUI89_LONG_LIFE_BATTERY_ENERGY_INTELLIGENCE_STANDARD_V1.0.md) as a shared engineering requirement. Prioritise long standby and efficient intermittent sensing, alerts and indoor mobility. Balance battery capacity against the 8 kg target / 10 kg maximum overall robot mass.
+PUI89 adopts the [Long-Life Battery & Energy Intelligence Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/energy/PUI89_LONG_LIFE_BATTERY_ENERGY_INTELLIGENCE_STANDARD_V1.0.md) as a shared engineering requirement. Prioritise long standby and efficient intermittent sensing, alerts and indoor mobility. Balance battery capacity against the 4–6 kg target / 10 kg maximum overall robot mass.
 
 Battery runtime, chemistry, capacity, cycle life, charging performance and safety compliance remain **TBD until designed and evidenced**. No unverified runtime or battery-life claim is made. The design must include an energy budget, independent BMS protections, thermal/electrical safety, service strategy and representative runtime validation.
 
@@ -806,7 +806,7 @@ These are development requirements, not claims of implemented, tested or validat
 **Recent verified repository progress:**
 - Merged offline-first controls, printed manual and remote-companion requirements (PR #101).
 - Added explicit local-operation, connectivity-loss and verification requirements; essential local controls and safety functions are specified not to depend on an app or internet connection.
-- The complete-mass design boundary remains an 8 kg target and 10 kg maximum, not a measured prototype result.
+- The complete-mass design boundary remains a 4–6 kg target and 10 kg maximum, not a measured prototype result.
 
 **Not established:** physical hardware, integrated sensors, validated mobility, certified household alarms, reliable hazard detection or real-home performance.
 
@@ -926,7 +926,7 @@ A reproducible evaluation framework for context-grounded indoor assistance and a
 
 ### 8. Safety, privacy and publication gates
 
-The HOME concept is an indoor four-wheel assistant; its payload target is 8 kg with a 10 kg maximum design limit, not a validated carrying rating. Do not claim safe physical operation without hazard analysis and tests. Use privacy-preserving data collection, informed consent and retention controls. Report simulation and physical results separately. Q1 suitability depends on verified novelty, ethical approval and reproducible evidence.
+The HOME concept is an indoor four-wheel assistant; its complete-robot mass target is 4–6 kg with a 10 kg maximum design limit; payload capacity is separate and TBD, not a validated carrying rating. Do not claim safe physical operation without hazard analysis and tests. Use privacy-preserving data collection, informed consent and retention controls. Report simulation and physical results separately. Q1 suitability depends on verified novelty, ethical approval and reproducible evidence.
 
 ## 360° Intelligence
 
@@ -967,3 +967,10 @@ See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://g
 AI HOME is designed for indoor use, not wilderness deployment. Prioritize predictable room navigation, privacy, obstacle response and safe docking. Offline operation is limited to implemented onboard functions and available battery.
 
 When inputs are missing, stale, conflicting or unreliable, show the reason and abstain from the affected action. Use only verified local data and capabilities. If safety, route confidence or energy reserve is insufficient, enter SAFE STOP / NEED HELP rather than guessing. “Offline capable” does not mean guaranteed operation in every remote, wild, underground or deep-field environment.
+
+
+## Portfolio alignment update — 28 November 2026
+
+The current proposed complete-robot mass target is **4–6 kg**, with a **10 kg maximum design limit**, including battery and all installed hardware. This is a design target, not measured prototype mass. Payload capacity is a separate requirement and remains TBD; do not confuse payload with complete-system mass. The six-product BOM framework records verified prototype cost as TBD until configuration, exact parts, origin evidence and dated quotations exist.
+
+See the [six-product BOM and cost framework](https://github.com/Pui89/PUI89-Research/blob/main/docs/PROTOTYPE_BOM_AND_COST_FRAMEWORK.md).
